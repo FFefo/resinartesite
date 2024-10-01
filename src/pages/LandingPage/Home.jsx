@@ -1,7 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
+import './Home.scss';
 
-function App() {
+export default function Cabecalho() {
   return (
     <div className="App">
       <header className="App-header">
@@ -21,5 +20,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
