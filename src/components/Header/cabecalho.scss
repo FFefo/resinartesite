@@ -1,0 +1,35 @@
+header{
+    background-color: #f5f5f5;
+    color: white;
+    padding: 38px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    overflow: hidden;
+  
+    .links{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+  
+      a{
+        text-decoration: none;
+        text-transform: none;
+        color: white;
+        padding: 11px 25px;
+        width: 30px;
+        border-radius: 20px;
+        background-color: #3A2E4B;
+        font-family: 'Roboto';
+        font-weight: 600;
+      }
+  
+      .lg{
+        margin-left: 820px;
+      }
+  
+    }
+  
+}

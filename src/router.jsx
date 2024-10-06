@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from './pages/LandingPage/Home.jsx';
 
-export default function Navegação() {
+export function Navegacao() {
     return (
         <BrowserRouter>
             <Routes>
