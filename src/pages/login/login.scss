@@ -1,0 +1,54 @@
+.pagina-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 657px;
+    background-color: #bebeed;
+    display: flex;
+    flex-direction: column;
+
+    .login {
+        color: #565656;
+
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 400px;
+        height: 450px;
+        background-color: white;
+
+        .campos {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                position: relative;
+                left: 15px;
+            }
+
+            input {
+                background-color: #e8e8e8;
+                border-style: hidden;
+                border-radius: 20px;
+                padding: 10px;
+                width: 300px;
+            }
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 15px;
+            width: 150px;
+
+            font-size: 20px;
+            background-color: #dacbee;
+
+            border-style: hidden;
+            border-radius: 30px;
+        }
+
+    }
+}

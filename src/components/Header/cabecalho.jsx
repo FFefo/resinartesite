@@ -12,15 +12,15 @@ export default function Cabecalho() {
           <div className='links'>
   
           <div className='vt'>
-          <Link to="/Vitrine"> Vitrine </Link>
+          <Link to="/vitrine"> Vitrine </Link>
           </div>
   
           <div className='cl'>
-          <Link to="/Colaboradores"> Colaboradores </Link>
+          <Link to="/colaboradores"> Colaboradores </Link>
           </div>
   
           <div className='lg'>
-          <Link to="/Login"> Login </Link>
+          <Link to="/login"> Login </Link>
           </div>
   
           </div>
