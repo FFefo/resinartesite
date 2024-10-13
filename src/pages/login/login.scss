@@ -1,4 +1,6 @@
 .pagina-login {
+
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,6 +29,7 @@
             label {
                 position: relative;
                 left: 15px;
+                margin-top: 10px;
             }
 
             input {
@@ -36,6 +39,11 @@
                 padding: 10px;
                 width: 300px;
             }
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
         }
 
         button {

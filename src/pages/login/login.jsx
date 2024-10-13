@@ -1,4 +1,6 @@
 import './login.scss';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function Login() {
     return (
@@ -16,7 +18,7 @@ export default function Login() {
 
                 </div>
 
-                <button>Entrar</button>
+                <button><Link to='/admin'>Entrar</Link></button>
                 
             </div>
         </div>
