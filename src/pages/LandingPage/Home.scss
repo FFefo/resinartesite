@@ -5,19 +5,24 @@
     flex-direction: column;
 
     .introducao {
-        background-color: #E4DAF0;
-        padding: 200px;
+       
+        background-image: url(../../../public/assets/images/su0.png);
+        background-size: cover;
         display: flex;
         flex-direction: column;
+        height: 880px;
+        justify-content: center;
+
 
         .titulo {
+            
+            
             text-align: center;
             color: #635E61;
             font-family: 'Sen';
             font-weight: 500;
             font-size: 90px;
-            margin-top: -5px;
-
+            margin-top: -10px;
         }
 
         p {
@@ -28,12 +33,16 @@
         }
     }
 
+    .gradiente{
+        background: linear-gradient(#DFB2E4, #a7edff);
+        height: 200px;
+    }
+
     .containers {
         display: flex;
         align-items: center;
         flex-direction: column;
-        background-image: url(../../../public/assets/images/fundo_gradiente.jpg);
-        background-size: cover;
+        background-color: #a7edff;
 
         .container01 {
 
@@ -43,7 +52,7 @@
             justify-content: space-evenly;
 
             padding: 40px 0px;
-            margin: 150px 0px;
+            margin: 150px 0px 0px 0px;
 
             background-color: rgba(255, 255, 255, 0.636);
             border: 3px solid white;
@@ -78,6 +87,157 @@
 
             }
         }
+
+        .container02{
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+
+            padding: 40px 0px;
+            margin: 150px 0px 0px 0px;
+
+            background-color: rgba(255, 255, 255, 0.636);
+            border: 3px solid white;
+            border-radius: 75px;
+
+            text-align: center;
+            width: 700px;
+
+            .texto {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+
+                width: 310px;
+
+                h1 {
+                    font-family: 'Staatliches';
+                    width: 130px;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 21px;
+                    font-family: 'Sarabun';
+                }
+            }
+
+            img {
+                border-radius: 35px;
+                width: 300px;
+                height: 350px;
+
+            }
+
+        }
+
+        .container03{
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+
+            padding: 40px 0px;
+            margin: 150px 0px;
+
+            background-color: rgba(255, 255, 255, 0.636);
+            border: 3px solid white;
+            border-radius: 75px;
+
+            text-align: center;
+            width: 700px;
+
+            .texto {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+
+                width: 310px;
+
+                h1 {
+                    font-family: 'Staatliches';
+                    width: 130px;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 21px;
+                    font-family: 'Sarabun';
+                }
+            }
+
+            img {
+                border-radius: 35px;
+                width: 300px;
+                height: 350px;
+
+            }
+
+        }
+    }
+
+    .rodape{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        background-image: url(../../../public/assets/images/su0.png);
+        background-size: cover;
+        padding: 50px 0px;
+
+        .emp{
+            display: flex;
+            flex-direction: column;
+
+            .text{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+                font-size: 15px;
+
+                width: 310px;
+
+                h1{
+                    font-size: 23px;
+                }
+            }
+        }
+
+        .cont{
+            display: flex;
+            flex-direction: column;
+
+            .text{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+                font-size: 15px;
+            
+                width: 310px;
+
+                h1{
+                    font-size: 23px;
+                }
+            }
+        }
+
+        .icones{
+            display: flex;
+            flex-direction: row; 
+            gap: 23px;
+            
+            .fa-brands{
+                font-size: 35px;
+            }
+        }
+
     }
 
 }

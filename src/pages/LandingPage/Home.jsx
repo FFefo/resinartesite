@@ -1,7 +1,6 @@
 import './Home.scss';
 import { Link } from 'react-router-dom';
 import Cabecalho from '../../components/Header/cabecalho.jsx';
-import Vestido from './autônoma_vestido.png'
 
 export default function Landingpage() {
   return (
@@ -14,6 +13,10 @@ export default function Landingpage() {
         <p>A arte vai além dos princípios do homem <br /> pois ela transcende ao inexplicável!</p>
       </div>
 
+      <div className='gradiente'>
+
+      </div>
+
       <div className='containers'>
 
         <div className='container01'>
@@ -24,18 +27,74 @@ export default function Landingpage() {
 
           </div>
 
-          <img src={Vestido} alt="a"/>
+          <img src='/assets/images/autônoma_vestido.png' alt="a" />
         </div>
 
         <div className='container02'>
+          <img src="/assets/images/working.webp" alt="" />
+
+          <div className='texto'>
+
+            <h1>Como é Meu Trabalho?</h1>
+            <p>É fundamental para mim incentivar a criatividade por meio de visitas a exposições e feiras de arte, além de acompanhar lives e até mesmo explorar conteúdos nas redes sociais como Instagram, Facebook e YouTube. Para mim, meu trabalho me da gosto de fazê-lo, pois a arte me incentiva.</p>
+
+          </div>
+
         </div>
 
         <div className='container03'>
+          <div className='texto'>
+
+            <h1>Materiais:</h1>
+            <ul>
+              <li>Resina Époxi</li>
+              <li>Pigmento</li>
+              <li>Moldes</li>
+              <li>Folha adesivo vinil transparente</li>
+              <li>Glitter focado</li>
+              <li>Enchimento (coração, borboleta, fruleta)</li>
+              <li>Folha de ouro, prata, bronze</li>
+              <li>Pitao (mini parafuso)</li>
+              <li>Argola</li>
+              <li>Flores desidratadas</li>
+              <li>Tassel</li>
+            </ul>
+
+          </div>
+
+          <img src="/assets/images/ferramentas.jpg" alt="" />
         </div>
 
       </div>
 
       <div className='rodape'>
+
+        <div className='emp'>
+
+          <div className='text'>
+            <h1>Empresa</h1>
+            <p>Somos uma empresa em formação que visa o crescimento de todas pessoas através de belos trabalhos feitos em resina. Há, mais ou menos, quatro anos que trabalhamos com resina.</p>
+          </div>
+
+        </div>
+
+        <div className='cont'>
+
+          <div className='text'>
+            <h1>Entre em Contato</h1>
+            <p>+55 11 95927-xxxx <br />
+              +82 98898-xxxx <br />
+              contato@resinarte.com <br />
+              São Paulo - São Paulo</p>
+          </div>
+
+        </div>
+
+        <div className='icones'>
+          <i className="fa-brands fa-instagram"></i>
+          <i className="fa-brands fa-square-facebook"></i>
+          <i className="fa-brands fa-youtube"></i>
+        </div>
 
       </div>
 
