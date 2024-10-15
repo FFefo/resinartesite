@@ -1,0 +1,58 @@
+.rodape{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(../../../public/assets/images/su0.png);
+    background-size: cover;
+    padding: 50px 0px;
+
+    .emp{
+        display: flex;
+        flex-direction: column;
+
+        .text{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            font-size: 15px;
+
+            width: 310px;
+
+            h1{
+                font-size: 23px;
+            }
+        }
+    }
+
+    .cont{
+        display: flex;
+        flex-direction: column;
+
+        .text{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            font-size: 15px;
+        
+            width: 310px;
+
+            h1{
+                font-size: 23px;
+            }
+        }
+    }
+
+    .icones{
+        display: flex;
+        flex-direction: row; 
+        gap: 23px;
+        
+        .fa-brands{
+            font-size: 35px;
+        }
+    }
+
+}
