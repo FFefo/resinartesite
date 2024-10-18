@@ -4,12 +4,13 @@
     align-items: center;
     justify-content: center;
     height: 897px;
-    background-color: #bebeed;
+    background-image: url(../../../public/assets/images/su0.png);
+    background-size: cover;
     display: flex;
     flex-direction: column;
 
     .login {
-        color: #565656;
+        color: #000000;
 
         border-radius: 40px;
         display: flex;
@@ -51,7 +52,8 @@
             width: 150px;
 
             font-size: 20px;
-            background-color: #dacbee;
+            background-color: #3A2E4B;
+            color: white;
 
             border-style: hidden;
             border-radius: 30px;

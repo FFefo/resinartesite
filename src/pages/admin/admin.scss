@@ -1,0 +1,42 @@
+.pagina-admin {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../../public/assets/images/gradiente.png);
+    background-size: cover;
+
+    .ferramentas {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .text {
+
+            h1 {
+                width: 600px;
+                font-size: 60px;
+
+            }
+
+            p {
+                width: 500px;
+                font-size: 25px;
+
+            }
+        }
+
+        .icon {
+            font-size: 50px;
+            display: flex;
+            align-self: start;
+            position: absolute;
+            right: 40px;
+            top: 200px;
+
+        }
+
+    }
+}
