@@ -1,0 +1,68 @@
+.vitrine-catalogo{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+
+    .pesquisa{
+        display: flex;
+        flex-direction: row;
+        padding: 40px;
+        background-image: url(../../../public/assets/images/gradiente.png);
+        background-size: cover;
+        justify-content: center;
+
+        .barrinha{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            input{
+                width: 700px;
+                padding: 13px;
+                border-radius: 30px;
+                border: 1px solid white;
+            }
+
+            .fa-solid{
+                position: relative;
+                right: 40px;
+            }
+        }
+    }
+
+    .carrossel{
+        padding: 250px;
+        background-image: url(../../../public/assets/images/bannerresinadois.png);
+        background-size: cover;
+        border-top: 9px solid #3A2E4B;
+        border-bottom: 9px solid #3A2E4B;
+    }
+
+    .catalogo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../../../public/assets/images/gradiente.png);
+        background-size: cover;
+        padding: 100px;
+
+        p{
+            padding: 10px 100px;
+            border-radius: 17px;
+            font-family: 'Potta One';
+            font-size: 25px;
+            background-color: #3A2E4B;
+            color: white;
+            margin-top: -20px;
+            margin-bottom: 80px;
+        }
+        
+        .vt{
+            padding: 700px;
+            background-color: white;
+            border-radius: 30px;
+        }
+    }
+}

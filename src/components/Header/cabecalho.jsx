@@ -10,6 +10,10 @@ export default function Cabecalho() {
           <img src="/assets/images/circle.png" alt="" width="42px" />
   
           <div className='links'>
+
+          <div className='hm'>
+          <Link to="/"> Início </Link>
+          </div>
   
           <div className='vt'>
           <Link to="/vitrine"> Vitrine </Link>

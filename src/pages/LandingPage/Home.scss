@@ -34,7 +34,7 @@
     }
 
     .gradiente{
-        background: linear-gradient(#DFB2E4, #a7edff);
+        background: linear-gradient(#DFB2E4, #EAE5FF);
         height: 200px;
     }
 
@@ -42,7 +42,8 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        background-color: #a7edff;
+        background-image: url(../../../public/assets/images/gradiente.png);
+        background-size: cover;
 
         .container01 {
 
@@ -182,8 +183,8 @@
     }
 
     .gradientee{
-        background: linear-gradient(#a7edff, #F1C4DA);
-        height: 60px;
+        background: linear-gradient(#E0EEFF, #F1C4DA);
+        height: 30px;
     }
 
 }
