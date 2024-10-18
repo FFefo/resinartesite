@@ -1,10 +1,28 @@
 .comp-produto{
+    display: flex;
+    flex-direction: column;
+
     img{
-        width: 220px;
+        width: 210px;
+        height: 210px;
         border-radius: 15px;
     }
 
-    .desc{
-        font-size: 50px;
+    .des{
+        font-size: 20px;
+        font-family: 'Roboto';
+        font-weight: 600;
+        color: #524D4D;
+        margin: 10px 0px;
+        width: 210px;
+
     }
+
+    .preço{
+        margin: 0px;
+        font-size: 30px;
+        font-family: 'Roboto';
+        font-weight: 700;
+    }
+
 }

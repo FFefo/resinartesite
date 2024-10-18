@@ -25,10 +25,32 @@ export default function Vitrine() {
 
             <div className='catalogo'>
 
-                <p>CATÁLOGO</p>
+                <p className='sub-titulo'>CATÁLOGO</p>
 
                 <div className='vt'>
-                    <Produto imagem='/assets/images/produto1vitrine.jpg' alt='produto1' descrição='Chaveiros em Resina: Decoração diversa' preço='15,70'/>
+
+                    <div className='chaveiros'>
+
+                        <p className='categorias'> CHAVEIROS: </p>
+
+                        <div className='produtos'>
+
+                            <h1>◀  </h1>
+
+                            <Produto imagem='/assets/images/produto1vitrine.jpg' alt='produto1' descrição='Chaveiros em Resina: Decoração diversa' preço='15,70' />
+
+                            <Produto imagem='/assets/images/chaveirodois.jpg' alt='produto2' descrição='Chaveiros temático de passáros' preço='15,00' />
+
+                            <Produto imagem='/assets/images/chaveirotres.jpg' alt='produto3' descrição='Chaveiros com iniciais, correia dourada' preço='20,00' />
+
+                            <Produto imagem='/assets/images/chaveiroquatro.jpg' alt='produto4' descrição='Chaveiros gêmeos de peixe, correia dourada' preço='25,50' />
+
+                            <h1>▶  </h1>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
