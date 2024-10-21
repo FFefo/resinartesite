@@ -1,63 +1,66 @@
 .pagina-login {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 897px;
+    height: 1121px;
     background-image: url(../../../public/assets/images/su0.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
 
-    .login {
-        color: #000000;
-
-        border-radius: 40px;
+    .secao-login {
+        height: 100%;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
 
-        width: 400px;
-        height: 450px;
-        background-color: white;
+        .caixinha {
+            color: #000000;
 
-        .campos {
+            border-radius: 40px;
             display: flex;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
-            label {
-                position: relative;
-                left: 15px;
-                margin-top: 10px;
+            width: 400px;
+            height: 450px;
+            background-color: white;
+
+            .campos {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    position: relative;
+                    left: 15px;
+                    margin-top: 10px;
+                }
+
+                input {
+                    background-color: #e8e8e8;
+                    border-style: hidden;
+                    border-radius: 20px;
+                    padding: 10px;
+                    width: 300px;
+                }
             }
 
-            input {
-                background-color: #e8e8e8;
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            button {
+                margin-top: 30px;
+                padding: 15px;
+                width: 150px;
+
+                font-size: 20px;
+                background-color: #3A2E4B;
+                color: white;
+
                 border-style: hidden;
-                border-radius: 20px;
-                padding: 10px;
-                width: 300px;
+                border-radius: 30px;
             }
+
         }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        button {
-            margin-top: 30px;
-            padding: 15px;
-            width: 150px;
-
-            font-size: 20px;
-            background-color: #3A2E4B;
-            color: white;
-
-            border-style: hidden;
-            border-radius: 30px;
-        }
-
     }
 }

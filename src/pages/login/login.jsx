@@ -1,5 +1,5 @@
 import './login.scss';
-import {useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios'
 import { useState } from 'react';
 import Cabecalho from '../../components/Header/cabecalho.jsx';
@@ -19,24 +19,27 @@ export default function Login() {
         const url = `http://localhost:5010/entrar/`
         let resp = await axios.post(url, usuario)
 
-        if (resp.data.erro != undefined) {
+        if (resp.data.erro !== undefined) {
             alert(resp.data.erro)
         }
         else {
             localStorage.setItem('USUARIO', resp.data.token)
-            navigate('/consultar')
+            navigate('/admin')
         }
     }
     return (
         <div className='pagina-login'>
 
-            {/* // <Cabecalho /> // */}
+            <Cabecalho />
 
-            <div className='login'>
+            <div className='secao-login'>
 
-                <h1>Login</h1>
 
-                <div className='campos'>
+                <div className='caixinha'>
+
+                    <h1>Login</h1>
+
+                    <div className='campos'>
 
                         <label htmlFor='nome'>Nome de usuário</label>
                         <input
@@ -44,7 +47,6 @@ export default function Login() {
                             type="text"
                             value={nome}
                             onChange={(e) => setNome(e.target.value)} />
-
 
 
                         <label htmlFor='senha'>Senha</label>
@@ -55,10 +57,11 @@ export default function Login() {
                             onChange={(e) => setSenha(e.target.value)} />
 
 
+                    </div>
+
+                    <button onClick={entrar}>Entrar</button>
+
                 </div>
-
-                <button onClick={entrar}>Entrar</button>
-
             </div>
         </div>
 

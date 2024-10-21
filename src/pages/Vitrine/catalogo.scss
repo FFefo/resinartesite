@@ -61,8 +61,10 @@
 
         .vt {
             display: flex;
+            display: inline-block;
             padding-top: 20px;
             justify-content: space-evenly;
+            align-items: center;
             width: 1300px;
             height: 1400px;
             background-color: white;
@@ -71,6 +73,7 @@
             .chaveiros {
                 display: flex;
                 flex-direction: column;
+                align-items: center;
                 gap: 20px;
 
                 .categorias {
@@ -82,15 +85,44 @@
                     font-size: 25px;
                     background-color: #3A2E4B;
                     color: white;
+                    align-self: flex-start;
+                    margin-left: 100px;
                 }
 
                 .produtos {
                     display: flex;
                     flex-direction: row;
-                    align-items: center;
+                    justify-content: center;
                     gap: 50px;
                 }
 
+            }
+
+            .canetas{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+
+                .categorias {
+                    padding: 10px 50px;
+                    width: 150px;
+                    text-align: center;
+                    border-radius: 17px;
+                    font-family: 'Potta One';
+                    font-size: 25px;
+                    background-color: #3A2E4B;
+                    color: white;
+                    align-self: flex-start;
+                    margin-left: 100px;
+                }
+
+                .produtos {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 50px;
+                }
             }
 
         }

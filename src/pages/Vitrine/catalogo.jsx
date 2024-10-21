@@ -51,6 +51,28 @@ export default function Vitrine() {
 
                     </div>
 
+                    <div className='canetas'>
+
+                        <p className='categorias'> CANETAS: </p>
+
+                        <div className='produtos'>
+
+                            <h1>◀  </h1>
+
+                            <Produto imagem='/assets/images/canetaum.jpg' alt='caneta1' descrição='Chaveiros em Resina: Decoração diversa' preço='15,70' />
+
+                            <Produto imagem='/assets/images/canetadois.jpg' alt='caneta2' descrição='Chaveiros temático de passáros' preço='15,00' />
+
+                            <Produto imagem='/assets/images/canetatres.jpg' alt='caneta3' descrição='Chaveiros com iniciais, correia dourada' preço='20,00' />
+
+                            <Produto imagem='/assets/images/canetaquatro.jpg' alt='caneta4' descrição='Chaveiros gêmeos de peixe, correia dourada' preço='25,50' />
+
+                            <h1>▶  </h1>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
