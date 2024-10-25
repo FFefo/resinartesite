@@ -1,5 +1,6 @@
 import './admin.scss'
 import Cabecalho from '../../components/Header/cabecalho.jsx'
+import BotaoAdmin from '../../components/botãoAdmin/botao.jsx'
 
 export default function LandingPageAdmin() {
     return (
@@ -7,7 +8,10 @@ export default function LandingPageAdmin() {
 
             <Cabecalho />
 
-            <div className='ferramentas'>
+            <div className='conteúdo'>
+
+                <div className='cont-sup'>
+
 
                     <div className='text'>
                         <h1>Bem vinda, Dani.</h1>
@@ -17,8 +21,16 @@ export default function LandingPageAdmin() {
                     <div className='icon'>
                         <i className="fa-solid fa-bars"></i>
                     </div>
+                </div>
+
+                <div className='botoes'>
+                    <BotaoAdmin imagem='/assets/images/barras.png' texto='Consultar Produtos' />
+                    <BotaoAdmin imagem='/assets/images/barras.png' texto='Adicionar Produtos' />
+                </div>
 
                 <div className='op'>
+
+
 
                 </div>
 
