@@ -1,5 +1,4 @@
 import './Home.scss';
-import { Link } from 'react-router-dom';
 import Cabecalho from '../../components/Header/cabecalho.jsx';
 import Rodape from '../../components/Body/rodape.jsx';
 

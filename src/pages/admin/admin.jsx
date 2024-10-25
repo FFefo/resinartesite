@@ -24,7 +24,7 @@ export default function LandingPageAdmin() {
                 </div>
 
                 <div className='botoes'>
-                    <BotaoAdmin imagem='/assets/images/barras.png' texto='Consultar Produtos' />
+                    <BotaoAdmin imagem='/assets/images/barras.png' link='/consulta' texto='Consultar Produtos' />
                     <BotaoAdmin imagem='/assets/images/barras.png' texto='Adicionar Produtos' />
                 </div>
 

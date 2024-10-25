@@ -1,4 +1,5 @@
 import './botao.scss';
+import { Link } from 'react-router-dom';
 
 export default function BotaoAdmin(props) {
 
@@ -8,7 +9,7 @@ export default function BotaoAdmin(props) {
                 <img src={props.imagem} alt="" />
             </div>
             <div className='texto'>
-            <p>{props.texto}</p>
+            <Link to={props.link}>{props.texto}</Link>
             </div>
         </div>
     )
