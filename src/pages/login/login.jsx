@@ -43,7 +43,6 @@ export default function Login() {
 
                         <label htmlFor='nome'>Nome de usuário</label>
                         <input
-                            id='nome'
                             type="text"
                             value={nome}
                             onChange={(e) => setNome(e.target.value)} />
@@ -51,7 +50,6 @@ export default function Login() {
 
                         <label htmlFor='senha'>Senha</label>
                         <input
-                            id='senha'
                             type="text"
                             value={senha}
                             onChange={(e) => setSenha(e.target.value)} />
