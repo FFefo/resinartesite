@@ -2,15 +2,8 @@ import './catalogo.scss';
 import Cabecalho from '../../components/Header/cabecalho.jsx';
 import Rodape from '../../components/Body/rodape.jsx';
 import Produto from '../../components/Produto/produto.jsx';
-import { Swiper, SwiperSlide } from 'swiper/react';
 
 export default function Vitrine() {
-
-    const data = [
-        {id: '1', image: 'public/assets/images/bannerresinadois.png'},
-        {id: '2', image: 'public/assets/images/bannerresinatres.png'}
-    ]
-
     return (
         <div className='vitrine-catalogo'>
 
