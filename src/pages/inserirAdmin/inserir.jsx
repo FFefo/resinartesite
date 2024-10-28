@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import './inserir.scss';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import Cabecalho from '../../components/Header/cabecalho';
+import axios from 'axios';
 
 export default function Inserir() {
 
@@ -14,7 +15,8 @@ export default function Inserir() {
     const [usuario, setUsuario] = useState(null);
     const [token, setToken] = useState(null);
 
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+    const { id } = useParams();
 
     function alterarImagem(e) {
         const file = e.target.files[0];
@@ -29,16 +31,43 @@ export default function Inserir() {
         }
     }
 
-    async function Adicionar() {
-        let url = `http://localhost:5010/produtos?x-access-token=${token}`;
+    async function Inserir() {
         let paramsCorpo = {
-            "nome": {nome},
-            "nome": {nome},
-            "nome": {nome},
-            "nome": {nome},
-            "nome": {nome},
-            "nome": {nome},
+            "nome": nome,
+            "descricao": descricao,
+            "categoria": categoria,
+            "quantidade": quantidade,
+            "preco": preco,
+            "imagem": imagem,
+            "usuario": usuario
         }
+
+        if (id === undefined) {
+
+            const url = `http://localhost:5010/produtos?x-access-token=${token}`;
+            let resp = await axios.post(url, paramsCorpo);
+            alert('Produto adicionado a vitrine. Id: ' + resp.data.novoId);
+        }
+        else {
+
+            const url = `http://localhost:5010/produtos/${id}?x-access-token=${token}`;
+            await axios.put(url, paramsCorpo);
+            alert('Produto alterado na vitrine.');
+        }
+    }
+
+    async function Consultar() {
+        const url = `http://localhost:5010/produtos?x-access-token=${token}`;
+        let resp = await axios.get(url);
+        let dados = resp.data;
+
+        setNome(dados.nome);
+        setDescricao(dados.descricao);
+        setCategoria(dados.categoria);
+        setQuantidade(dados.quantidade);
+        setPreco(dados.preco);
+        setImagem(dados.imagem);
+        setUsuario(dados.usuario);
     }
 
     useEffect(() => {
@@ -48,6 +77,8 @@ export default function Inserir() {
         if (token === 'null') {
             navigate('/')
         }
+
+        Consultar(token);
     }, [])
 
     return (
@@ -81,33 +112,49 @@ export default function Inserir() {
                             value={categoria}
                             onChange={e => setCategoria(e.target.value)} />
 
-                        <label htmlFor="Preço">Preço:</label>
+                        <label htmlFor="Quantidade">Quantidade:</label>
                         <input
                             type="text"
-                            value={preco}
-                            onChange={e => setPreco(e.target.value)} />
+                            value={quantidade}
+                            onChange={e => setQuantidade(e.target.value)} />
                         <div>
 
-                            <label htmlFor="imagem">Imagem:</label>
+                            <label htmlFor="Preço">Preço:</label>
                             <input
-                                type="file"
-                                accept='image/*'
-                                onChange={alterarImagem} />
-                            <i class='fa-solid fa-trash botao' onClick={() => setImagem(null)} />
-                        </div>
-                    </div>
-                    {imagem &&
-                        <div className='imagem'>
-                            <img
-                                id='inimigo'
-                                src={imagem}
-                                alt="Foto"
-                            />
-                        </div>
-                    }
-                </div>
+                                type="text"
+                                value={preco}
+                                onChange={e => setPreco(e.target.value)} />
+                            <div>
 
-                <button>Adicionar</button>
+                                <label htmlFor="Usuário">Usuário:</label>
+                                <input
+                                    type="text"
+                                    value={usuario}
+                                    onChange={e => setUsuario(e.target.value)} />
+                                <div>
+
+                                    <label htmlFor="imagem">Imagem:</label>
+                                    <input
+                                        type="file"
+                                        accept='image/*'
+                                        onChange={alterarImagem} />
+                                    <i class='fa-solid fa-trash botao' onClick={() => setImagem(null)} />
+                                </div>
+                            </div>
+                            {imagem &&
+                                <div className='imagem'>
+                                    <img
+                                        id='inimigo'
+                                        src={imagem}
+                                        alt="Foto"
+                                    />
+                                </div>
+                            }
+                        </div>
+
+                        <button onClick={Inserir}>Adicionar</button>
+                    </div>
+                </div>
             </div>
         </div>
     )

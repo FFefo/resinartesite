@@ -15,6 +15,7 @@ export function Navegacao() {
                 <Route path="/vitrine" element={<Vitrine />} />
                 <Route path="/admin" element={<LandingPageAdmin />} />
                 <Route path='/consulta' element={<Consulta />} />
+                <Route path='/adicionar/:id' element={<Inserir />} />
                 <Route path='/adicionar' element={<Inserir />} />
             </Routes>
         </BrowserRouter>

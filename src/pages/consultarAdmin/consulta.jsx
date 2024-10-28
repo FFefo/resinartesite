@@ -17,6 +17,13 @@ export default function Consulta() {
         setProduto(resp.data);
     }
 
+    async function Remover(id) {
+        const url = `http://localhost:5010/produtos/${id}?x-access-token=${token}`;
+        await axios.delete(url);
+
+        await Buscar()
+    }
+
     useEffect(() => {
         let token = localStorage.getItem('USUARIO')
         setToken(token)
@@ -25,6 +32,7 @@ export default function Consulta() {
             navigate('/')
         }
     }, [])
+
 
     return (
         <div className='pagina-consulta'>
@@ -55,20 +63,12 @@ export default function Consulta() {
                             <td>{item.categoria}</td>
                             <td>{item.preco}</td>
                             <div className='opcoes'>
-                                <i className="fa-solid fa-trash td"></i>
-                                <i class="fa-solid fa-pen td"></i>
+                                <Link to={`/adicionar/${item.id}`}><i class="fa-solid fa-pen td"></i></Link>
+                                <Link onClick={() => Remover(item.id)}><i onClick={() => Remover(item.id)} className="fa-solid fa-trash td"></i></Link>
 
                             </div>
                         </tr>
                     )}
-                    {/* 
-                    <tr>
-                        <td>id</td>
-                        <td>nome</td>
-                        <td>descricao</td>
-                        <td>categoria</td>
-                        <td>preco</td>
-                    </tr> */}
                 </tbody>
             </table>
         </div>
