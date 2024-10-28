@@ -2,35 +2,39 @@ import './cabecalho.scss';
 import { Link } from 'react-router-dom';
 
 export default function Cabecalho() {
-    return (
-      <div className="cabecalho">
+  return (
+    <div className="cabecalho">
 
-        <header>
+      <header>
 
-          <img src="/assets/images/circle.png" alt="" width="42px" />
-  
-          <div className='links'>
+        <img src="/assets/images/circle.png" alt="" width="42px" />
 
-          <div className='hm'>
-          <Link to="/"> Início </Link>
+        <div className='links'>
+
+          <div className='links-1'>
+            <div className='hm'>
+              <Link to="/"> Início </Link>
+            </div>
+
+            <div className='vt'>
+              <Link to="/vitrine"> Vitrine </Link>
+            </div>
+
+            <div className='cl'>
+              <Link to="/colaboradores"> Colaboradores </Link>
+            </div>
           </div>
-  
-          <div className='vt'>
-          <Link to="/vitrine"> Vitrine </Link>
-          </div>
-  
-          <div className='cl'>
-          <Link to="/colaboradores"> Colaboradores </Link>
-          </div>
-  
+
+
+
           <div className='lg'>
-          <Link to="/login"> Login </Link>
+            <Link to="/login"> Login </Link>
           </div>
-  
-          </div>
-  
-        </header>
 
-      </div>
-    );
+        </div>
+
+      </header>
+
+    </div>
+  );
 }

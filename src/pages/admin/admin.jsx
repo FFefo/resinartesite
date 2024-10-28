@@ -28,12 +28,6 @@ export default function LandingPageAdmin() {
                     <BotaoAdmin imagem='/assets/images/barras.png' link='/adicionar' texto='Adicionar Produtos' />
                 </div>
 
-                <div className='op'>
-
-
-
-                </div>
-
             </div>
 
         </div>

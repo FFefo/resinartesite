@@ -27,6 +27,15 @@ export default function Login() {
             navigate('/admin')
         }
     }
+
+    
+    async function teclaApertada(e) {
+        if(e.key == 'Enter'){
+            entrar();
+        }
+    
+    }
+
     return (
         <div className='pagina-login'>
 
@@ -52,7 +61,8 @@ export default function Login() {
                         <input
                             type="text"
                             value={senha}
-                            onChange={(e) => setSenha(e.target.value)} />
+                            onChange={(e) => setSenha(e.target.value)}
+                            onKeyUp={teclaApertada}/>
 
 
                     </div>
