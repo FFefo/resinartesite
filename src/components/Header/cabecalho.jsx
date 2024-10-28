@@ -7,7 +7,7 @@ export default function Cabecalho() {
 
       <header>
 
-        <img src="/assets/images/circle.png" alt="" width="42px" />
+        <img src="/assets/images/Logotipo.png" alt="" width="65px" />
 
         <div className='links'>
 

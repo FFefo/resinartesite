@@ -3,7 +3,7 @@ import Cabecalho from '../../components/Header/cabecalho.jsx';
 import Rodape from '../../components/Body/rodape.jsx';
 import Produto from '../../components/Produto/produto.jsx';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 
 import banner1img1 from '../../imgs/bannerresinadois.png';
 import banner2img2 from '../../imgs/bannerresinatres.png';
