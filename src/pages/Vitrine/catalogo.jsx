@@ -2,14 +2,43 @@ import './catalogo.scss';
 import Cabecalho from '../../components/Header/cabecalho.jsx';
 import Rodape from '../../components/Body/rodape.jsx';
 import Produto from '../../components/Produto/produto.jsx';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+import banner1img1 from '../../imgs/bannerresinadois.png';
+import banner2img2 from '../../imgs/bannerresinatres.png';
+import 'swiper/swiper-bundle.css';
 
 export default function Vitrine() {
+
+    const banners = [
+        {id: 1, img: banner1img1},
+        {id: 2, img: banner2img2}
+    ]
+
     return (
         <div className='vitrine-catalogo'>
 
             <Cabecalho />
 
             <div className='carrossel'>
+
+                <Swiper className='crss'
+                slidesPerView={1}
+                pagination={{clickable: true}}
+                modules={[Autoplay, Pagination]}
+                autoplay={{
+                    delay: 5000,
+                    disableOnInteraction: false
+                }}
+                loop={true}>
+
+                    {banners.map((item) => (
+                        <SwiperSlide className='item-banner' key={item.id}>
+                            <img src={item.img} alt="" />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
 
             </div>
 
