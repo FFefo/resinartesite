@@ -56,7 +56,7 @@ export default function Inserir() {
         }
     }
 
-    async function Consultar() {
+    async function Consultar(token) {
         const url = `http://localhost:5010/produtos?x-access-token=${token}`;
         let resp = await axios.get(url);
         let dados = resp.data;
@@ -124,36 +124,41 @@ export default function Inserir() {
                                 type="text"
                                 value={preco}
                                 onChange={e => setPreco(e.target.value)} />
-                            <div>
 
-                                <label htmlFor="Usuário">Usuário:</label>
-                                <input
-                                    type="text"
-                                    value={usuario}
-                                    onChange={e => setUsuario(e.target.value)} />
-                                <div>
 
-                                    <label htmlFor="imagem">Imagem:</label>
-                                    <input
-                                        type="file"
-                                        accept='image/*'
-                                        onChange={alterarImagem} />
-                                    <i class='fa-solid fa-trash botao' onClick={() => setImagem(null)} />
-                                </div>
-                            </div>
-                            {imagem &&
-                                <div className='imagem'>
-                                    <img
-                                        id='inimigo'
-                                        src={imagem}
-                                        alt="Foto"
-                                    />
-                                </div>
-                            }
+                            <label htmlFor="Usuário">Usuário:</label>
+                            <input
+                                type="text"
+                                value={usuario}
+                                onChange={e => setUsuario(e.target.value)} />
+
                         </div>
 
                         <button onClick={Inserir}>Adicionar</button>
                     </div>
+                </div>
+
+                <div className='campo-imagem'>
+
+                    <div>
+
+                        <label htmlFor="imagem">Imagem:</label>
+                        <input
+                            type="file"
+                            accept='image/*'
+                            onChange={alterarImagem} />
+                        <i class='fa-solid fa-trash botao' onClick={() => setImagem(null)} />
+                    </div>
+
+                    {imagem &&
+                        <div className='imagem'>
+                            <img
+                                id='inimigo'
+                                src={imagem}
+                                alt="Foto"
+                            />
+                        </div>
+                    }
                 </div>
             </div>
         </div>

@@ -30,7 +30,7 @@ export default function Login() {
 
     
     async function teclaApertada(e) {
-        if(e.key == 'Enter'){
+        if(e.key === 'Enter'){
             entrar();
         }
     
