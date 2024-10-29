@@ -31,7 +31,7 @@ export default function Landingpage() {
         </div>
 
         <div className='container02'>
-          <img src="/assets/images/working.webp" alt="" />
+          <img src="/assets/images/working.jpg" alt="" />
 
           <div className='texto'>
 
