@@ -1,11 +1,11 @@
 .pagina-login {
     height: 1121px;
-    background-image: url(../../../public/assets/images/su0.png);
-    background-size: cover;
     display: flex;
     flex-direction: column;
-
+    
     .secao-login {
+        background-size: cover;
+        background-image: url(../../../public/assets/images/su0.png);
         height: 100%;
         display: flex;
         align-items: center;

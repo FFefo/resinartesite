@@ -66,11 +66,11 @@ export default function Consulta() {
                             <td>{item.categoria}</td>
                             <td>{item.quantidade}</td>
                             <td>{item.preco}</td>
-                            {/* <img
+                            <img
                                     id='produto'
                                     src={item.imagem}
-                                    alt="Foto"
-                                /> */}
+                                    alt={item.imagem}
+                                />
                             <td>{item.usuario}</td>
                             <div className='opcoes'>
                                 <Link to={`/adicionar/${item.id}`}><i class="fa-solid fa-pen td"></i></Link>

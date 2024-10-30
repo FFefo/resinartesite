@@ -9,12 +9,48 @@ import banner1img1 from '../../imgs/bannerresinadois.png';
 import banner2img2 from '../../imgs/bannerresinatres.png';
 import 'swiper/swiper-bundle.css';
 
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+
 export default function Vitrine() {
 
+    const [listaVitrine, setListaVitrine] = useState([]);
+
+    async function teste() {
+        // pegar lista de registros
+
+        const url = `http://localhost:5010/produtos`
+        const resp = await axios.get(url)
+        let tamanho = resp.data.length
+
+        let produtos = []
+
+        for (let i = 0; i < tamanho; i++) {
+            let url = `http://localhost:5010/produtos/${i + 1}`
+            let resp = await axios.get(url)
+
+            let dados = resp.data
+            let produto = {
+                imagem: dados.imagem,
+                alt: 'foto',
+                descricao: dados.descricao,
+                preco: dados.preco
+            }
+            produtos[i] = produto
+
+            setListaVitrine(produtos)
+        }
+
+    }
+
     const banners = [
-        {id: 1, img: banner1img1},
-        {id: 2, img: banner2img2}
+        { id: 1, img: banner1img1 },
+        { id: 2, img: banner2img2 }
     ]
+
+    useEffect(() => {
+        teste()
+    }, [])
 
     return (
         <div className='vitrine-catalogo'>
@@ -24,14 +60,14 @@ export default function Vitrine() {
             <div className='carrossel'>
 
                 <Swiper className='crss'
-                slidesPerView={1}
-                pagination={{clickable: true}}
-                modules={[Autoplay, Pagination]}
-                autoplay={{
-                    delay: 5000,
-                    disableOnInteraction: false
-                }}
-                loop={true}>
+                    slidesPerView={1}
+                    pagination={{ clickable: true }}
+                    modules={[Autoplay, Pagination]}
+                    autoplay={{
+                        delay: 5000,
+                        disableOnInteraction: false
+                    }}
+                    loop={true}>
 
                     {banners.map((item) => (
                         <SwiperSlide className='item-banner' key={item.id}>
@@ -56,13 +92,14 @@ export default function Vitrine() {
 
                             <h1>◀  </h1>
 
-                            <Produto imagem='/assets/images/produto1vitrine.jpg' alt='produto1' descrição='Chaveiros em Resina: Decoração diversa' preço='15,70' />
-
-                            <Produto imagem='/assets/images/chaveirodois.jpg' alt='produto2' descrição='Chaveiros temático de passáros' preço='15,00' />
-
-                            <Produto imagem='/assets/images/chaveirotres.jpg' alt='produto3' descrição='Chaveiros com iniciais, correia dourada' preço='20,00' />
-
-                            <Produto imagem='/assets/images/chaveiroquatro.jpg' alt='produto4' descrição='Chaveiros gêmeos de peixe, correia dourada' preço='25,50' />
+                            {listaVitrine.map(item =>
+                                <Produto
+                                    imagem={item.imagem}
+                                    alt={item.alt}
+                                    descrição={item.descricao}
+                                    preço={item.preco}
+                                />
+                            )}
 
                             <h1>▶  </h1>
 
