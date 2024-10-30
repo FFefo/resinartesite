@@ -5,7 +5,6 @@
     display: flex;
     flex-direction: column;
 
-
     .secao-insert {
         height: 100%;
         display: flex;
@@ -21,6 +20,7 @@
                 position: relative;
                 bottom: 25px;
                 right: 120px;
+                margin-top: 20px;
             }
 
             color: #000000;
@@ -30,20 +30,22 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            margin-top: 30px;
 
             width: 700px;
-            height: 750px;
+            height: 865px;
             background-color: white;
 
             .campos {
+                gap: 10px;
                 display: flex;
                 flex-direction: column;
+                margin-right: 25px;
 
                 label {
                     font-size: 22px;
                     position: relative;
                     left: 15px;
-
                     margin-left: 25px;
                 }
 
@@ -67,6 +69,7 @@
 
                 button {
                     margin-top: 30px;
+                    margin-left: 23px;
                     padding: 15px;
                     width: 150px;
 
@@ -81,6 +84,39 @@
                 button:hover {
                     cursor: pointer;
                 }
+
+                .campo-imagem {
+
+                    display: flex;
+                    flex-direction: column;
+                    background-color: white;
+                    border-radius: 50px;
+                    gap: 7px;
+
+                    .camp {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 7px;
+
+                        .btimg{
+                            padding: 16px 20px;
+                            background-color: #e8e8e8;
+                            border-radius: 30px;
+                            font-size: 16px;
+                            margin-left: 10px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .fa-solid {
+                        cursor: pointer;
+                    }
+
+                    input {
+                        display: none;
+                    }
+                }
             }
 
             img {
@@ -89,17 +125,6 @@
                 max-height: 100px;
 
             }
-        }
-
-        .campo-imagem {
-
-            background-color: white;
-            border-radius: 50px;
-
-            .fa-solid {
-                cursor: pointer;
-            }
-
         }
     }
 }

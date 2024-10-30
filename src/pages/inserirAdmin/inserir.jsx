@@ -117,49 +117,58 @@ export default function Inserir() {
                             type="text"
                             value={quantidade}
                             onChange={e => setQuantidade(e.target.value)} />
-                        <div>
 
-                            <label htmlFor="Preço">Preço:</label>
-                            <input
-                                type="text"
-                                value={preco}
-                                onChange={e => setPreco(e.target.value)} />
+                        <label htmlFor="Preço">Preço:</label>
+                        <input
+                            type="text"
+                            value={preco}
+                            onChange={e => setPreco(e.target.value)} />
 
+                        <div className='campo-imagem'>
 
-                            <label htmlFor="Usuário">Usuário:</label>
-                            <input
-                                type="text"
-                                value={usuario}
-                                onChange={e => setUsuario(e.target.value)} />
+                            <label for="imagem">Imagem:</label>
+
+                            <div className='camp'>
+
+                                <input
+                                    type="file"
+                                    id='imgslt'
+                                    accept='image/*'
+                                    onChange={alterarImagem} />
+
+                                <label htmlFor="imgslt" className='btimg'>Escolher Arquivo</label>
+
+                                <div className='rmvbt'>
+
+                                    <i class='fa-solid fa-trash botao' onClick={() => setImagem(null)} />
+
+                                </div>
+
+                            </div>
 
                         </div>
+
+                        {imagem &&
+                            <div className='imagem'>
+                                <img
+                                    id='inimigo'
+                                    src={imagem}
+                                    alt="Foto"
+                                />
+                            </div>
+                        }
+
+                        <label htmlFor="Usuário">Usuário:</label>
+                        <input
+                            type="text"
+                            value={usuario}
+                            onChange={e => setUsuario(e.target.value)} />
 
                         <button onClick={Inserir}>Adicionar</button>
                     </div>
                 </div>
 
-                <div className='campo-imagem'>
 
-                    <div>
-
-                        <label htmlFor="imagem">Imagem:</label>
-                        <input
-                            type="file"
-                            accept='image/*'
-                            onChange={alterarImagem} />
-                        <i class='fa-solid fa-trash botao' onClick={() => setImagem(null)} />
-                    </div>
-
-                    {imagem &&
-                        <div className='imagem'>
-                            <img
-                                id='inimigo'
-                                src={imagem}
-                                alt="Foto"
-                            />
-                        </div>
-                    }
-                </div>
             </div>
         </div>
     )

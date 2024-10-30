@@ -12,6 +12,7 @@ export default function Cabecalho() {
         <div className='links'>
 
           <div className='links-1'>
+
             <div className='hm'>
               <Link to="/"> Início </Link>
             </div>
@@ -20,9 +21,10 @@ export default function Cabecalho() {
               <Link to="/vitrine"> Vitrine </Link>
             </div>
 
-            <div className='cl'>
+            {/* <div className='cl'>
               <Link to="/colaboradores"> Colaboradores </Link>
-            </div>
+            </div> */}
+
           </div>
 
 

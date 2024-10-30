@@ -12,7 +12,6 @@ export default function LandingPageAdmin() {
 
                 <div className='cont-sup'>
 
-
                     <div className='text'>
                         <h1>Bem vinda, Dani.</h1>
                         <p>Aqui você pode controlar o conteúdo de seu site, além de usufruir de outras ferramentas.</p>
@@ -25,7 +24,7 @@ export default function LandingPageAdmin() {
 
                 <div className='botoes'>
                     <BotaoAdmin imagem='/assets/images/barras.png' link='/consulta' texto='Consultar Produtos' />
-                    <BotaoAdmin imagem='/assets/images/barras.png' link='/adicionar' texto='Adicionar Produtos' />
+                    <BotaoAdmin imagem='/assets/images/sinalmaisbg.png' link='/adicionar' texto='Adicionar Produtos' />
                 </div>
 
             </div>

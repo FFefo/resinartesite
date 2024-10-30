@@ -45,12 +45,14 @@ export default function Consulta() {
             <table>
                 <thead>
                     <tr>
-                        <th>Id</th>
+                        <th>ID</th>
                         <th>Nome</th>
                         <th>Descrição</th>
                         <th>Categoria</th>
+                        <th>Quantidade</th>
                         <th>Preço</th>
-                        <th>Opções</th>
+                        <th>Imagem</th>
+                        <th>Usuário</th>
                     </tr>
                 </thead>
 
