@@ -56,29 +56,32 @@ export default function Inserir() {
         }
     }
 
-    async function Consultar(token) {
-        const url = `http://localhost:5010/produtos?x-access-token=${token}`;
-        let resp = await axios.get(url);
-        let dados = resp.data;
+    async function Consultar(id, token) {
+        if (id !== undefined) {
+            const url = `http://localhost:5010/produtos/${id}?x-access-token=${token}`;
+            let resp = await axios.get(url);
+            let dados = resp.data;
 
-        setNome(dados.nome);
-        setDescricao(dados.descricao);
-        setCategoria(dados.categoria);
-        setQuantidade(dados.quantidade);
-        setPreco(dados.preco);
-        setImagem(dados.imagem);
-        setUsuario(dados.usuario);
+            setNome(dados.produto);
+            setDescricao(dados.descricao);
+            setCategoria(dados.categoria);
+            setQuantidade(dados.quantidade);
+            setPreco(dados.preco);
+            setImagem(dados.imagem);
+            setUsuario(dados.usuario);
+        }
     }
 
     useEffect(() => {
         let token = localStorage.getItem('USUARIO')
         setToken(token)
 
+
         if (token === 'null') {
             navigate('/')
         }
 
-        Consultar(token);
+        Consultar(id, token);
     }, [])
 
     return (
