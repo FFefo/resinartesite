@@ -10,11 +10,21 @@
     .conteúdo {
         display: flex;
         flex-direction: column;
-        gap: 100px;
-        height: 957px;
+        gap: 50px;
+        height: 970px;
+
+        .voltar {
+            align-self: flex-start;
+            font-size: 32px;
+            color: inherit;
+            font-weight: 500;
+            margin: 25px 0px 0px 25px;
+            border: hidden;
+            background-color: transparent;
+            cursor: pointer;
+        }
 
         .cont-sup {
-            margin-top: 50px;
             display: flex;
             justify-content: center;
 
@@ -38,15 +48,15 @@
                 }
             }
 
-            .icon {
-                font-size: 50px;
-                display: flex;
-                align-self: start;
-                position: absolute;
-                right: 40px;
-                top: 200px;
+            // .icon {
+            //     font-size: 50px;
+            //     display: flex;
+            //     align-self: start;
+            //     position: absolute;
+            //     right: 40px;
+            //     top: 200px;
 
-            }
+            // }
         }
 
         .botoes {

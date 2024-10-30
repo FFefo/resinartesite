@@ -12,6 +12,7 @@
         font-weight: 500;
         margin: 25px 0px 0px 25px;
         width: 351px;
+        
     }
 
     button {
@@ -52,18 +53,23 @@
         tbody {
             background-color: white;
             border-radius: 50px;
-            width: 1500px;
+            width: 1580px;
 
             tr {
                 display: flex;
                 align-items: center;
                 height: 70px;
                 justify-content: space-between;
-                padding: 0px 30px;
+                padding: 0px 20px;
 
                 .opcoes {
                     display: flex;
                     gap: 20px;
+
+
+                    .fa-solid {
+                        color: black;
+                    }
                 }
 
                 .fa-solid:hover {

@@ -1,14 +1,40 @@
 import './admin.scss'
 import Cabecalho from '../../components/Header/cabecalho.jsx'
 import BotaoAdmin from '../../components/botãoAdmin/botao.jsx'
+import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react'
 
 export default function LandingPageAdmin() {
+
+    const [token, setToken] = useState(null);
+
+    const navigate = useNavigate()
+
+    async function Sair() {
+        localStorage.setItem('USUARIO', null)
+        navigate('/')
+    }
+
+    useEffect(() => {
+        let token = localStorage.getItem('USUARIO')
+        setToken(token)
+    
+        if (token === 'null') {
+            navigate('/')
+        }
+    }, [])
+
     return (
         <div className='pagina-admin'>
 
             <Cabecalho />
 
             <div className='conteúdo'>
+
+                <button className='voltar' onClick={Sair}><i className="fa-solid fa-arrow-left"></i> Sair da conta</button>
+
+
+
 
                 <div className='cont-sup'>
 
@@ -17,9 +43,9 @@ export default function LandingPageAdmin() {
                         <p>Aqui você pode controlar o conteúdo de seu site, além de usufruir de outras ferramentas.</p>
                     </div>
 
-                    <div className='icon'>
+                    {/* <div className='icon'>
                         <i className="fa-solid fa-bars"></i>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className='botoes'>

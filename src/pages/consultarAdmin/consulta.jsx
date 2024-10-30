@@ -51,8 +51,9 @@ export default function Consulta() {
                         <th>Categoria</th>
                         <th>Quantidade</th>
                         <th>Preço</th>
-                        <th>Imagem</th>
+                        {/* <th>Imagem</th> */}
                         <th>Usuário</th>
+                        <th>Opções</th>
                     </tr>
                 </thead>
 
@@ -63,7 +64,14 @@ export default function Consulta() {
                             <td>{item.nome}</td>
                             <td>{item.descricao}</td>
                             <td>{item.categoria}</td>
+                            <td>{item.quantidade}</td>
                             <td>{item.preco}</td>
+                            {/* <img
+                                    id='produto'
+                                    src={item.imagem}
+                                    alt="Foto"
+                                /> */}
+                            <td>{item.usuario}</td>
                             <div className='opcoes'>
                                 <Link to={`/adicionar/${item.id}`}><i class="fa-solid fa-pen td"></i></Link>
                                 <Link onClick={() => Remover(item.id)}><i onClick={() => Remover(item.id)} className="fa-solid fa-trash td"></i></Link>

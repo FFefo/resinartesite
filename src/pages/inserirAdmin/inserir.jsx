@@ -148,16 +148,6 @@ export default function Inserir() {
 
                         </div>
 
-                        {imagem &&
-                            <div className='imagem'>
-                                <img
-                                    id='inimigo'
-                                    src={imagem}
-                                    alt="Foto"
-                                />
-                            </div>
-                        }
-
                         <label htmlFor="Usuário">Usuário:</label>
                         <input
                             type="text"
@@ -168,7 +158,35 @@ export default function Inserir() {
                     </div>
                 </div>
 
+                <div className='secao-imagem'>
 
+                    <p>Imagem escolhida:</p>
+
+                    <div className='caixinha-imagem'>
+
+                        {imagem ?
+
+                            <img style={{
+                                width: "100%",
+                            }}
+                                id='produto'
+                                src={imagem}
+                                alt="Foto"
+                            />
+
+                            :
+
+                            <img style={{
+                                padding: "10px",
+                            }}
+                                id='produto'
+                                src={'/assets/images/photo.png'}
+                                alt="Foto"
+                            />
+
+                        }
+                    </div>
+                </div>
             </div>
         </div>
     )
