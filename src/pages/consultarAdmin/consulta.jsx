@@ -74,7 +74,7 @@ export default function Consulta() {
                             <td>{item.usuario}</td>
                             <div className='opcoes'>
                                 <Link to={`/adicionar/${item.id}`}><i class="fa-solid fa-pen td"></i></Link>
-                                <Link onClick={() => Remover(item.id)}><i onClick={() => Remover(item.id)} className="fa-solid fa-trash td"></i></Link>
+                                <Link onClick={() => Remover(item.id)}><i className="fa-solid fa-trash td"></i></Link>
 
                             </div>
                         </tr>

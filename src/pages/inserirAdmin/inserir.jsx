@@ -157,7 +157,9 @@ export default function Inserir() {
                             value={usuario}
                             onChange={e => setUsuario(e.target.value)} />
 
-                        <button onClick={Inserir}>Adicionar</button>
+
+                        <button onClick={Inserir}>{id ? "Alterar" : "Adicionar"}</button>
+
                     </div>
                 </div>
 
