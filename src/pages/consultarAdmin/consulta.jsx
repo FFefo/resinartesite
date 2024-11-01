@@ -12,13 +12,13 @@ export default function Consulta() {
     const navigate = useNavigate()
 
     async function Buscar() {
-        const url = `http://localhost:5010/produtos?x-access-token=${token}`;
+        const url = `http://4.172.207.208:5027/produtos?x-access-token=${token}`;
         let resp = await axios.get(url);
         setProduto(resp.data);
     }
 
     async function Remover(id) {
-        const url = `http://localhost:5010/produtos/${id}?x-access-token=${token}`;
+        const url = `http://4.172.207.208:5027/produtos/${id}?x-access-token=${token}`;
         await axios.delete(url);
 
         await Buscar()

@@ -21,14 +21,14 @@ export default function Vitrine() {
     async function VitrineChaveiros() {
         // pegar lista de registros
 
-        const url = `http://localhost:5010/produto/Chaveiros`
+        const url = `http://4.172.207.208:5027/produto/Chaveiros`
         const resp = await axios.get(url)
         let tamanho = resp.data.length
 
         let produtos = []
 
         for (let i = 0; i < tamanho; i++) {
-            let url = `http://localhost:5010/produtos/${i + 1}/Chaveiros`
+            let url = `http://4.172.207.208:5027/produtos/${i + 1}/Chaveiros`
             let resp = await axios.get(url)
 
             let dados = resp.data
@@ -49,14 +49,14 @@ export default function Vitrine() {
     async function VitrineCanetas() {
         // pegar lista de registros
 
-        const url = `http://localhost:5010/produto/Canetas`
+        const url = `http://4.172.207.208:5027/produto/Canetas`
         const resp = await axios.get(url)
         let tamanho = resp.data.length
 
         let produtos = []
 
         for (let i = 4, i2 = 0; i < tamanho + 4; i++, i2++) {
-            let url = `http://localhost:5010/produtos/${i + 1}/Canetas`
+            let url = `http://4.172.207.208:5027/produtos/${i + 1}/Canetas`
             let resp = await axios.get(url)
 
             let dados = resp.data
@@ -77,14 +77,14 @@ export default function Vitrine() {
     async function VitrineAcessorios() {
         // pegar lista de registros
 
-        const url = `http://localhost:5010/produto/Acessorios`
+        const url = `http://4.172.207.208:5027/produto/Acessorios`
         const resp = await axios.get(url)
         let tamanho = resp.data.length
 
         let produtos = []
 
         for (let i = 8, i2 = 0; i < tamanho + 8; i++, i2++) {
-            let url = `http://localhost:5010/produtos/${i + 1}/Acessorios`
+            let url = `http://4.172.207.208:5027/produtos/${i + 1}/Acessorios`
             let resp = await axios.get(url)
 
             let dados = resp.data
