@@ -16,7 +16,7 @@ export default function Login() {
             "senha": senha
         }
 
-        const url = `http://4.172.207.208:5027/entrar/`
+        const url = `http://localhost:5027/entrar/`
         let resp = await axios.post(url, usuario)
 
         if (resp.data.erro !== undefined) {

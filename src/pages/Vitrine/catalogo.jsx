@@ -19,19 +19,16 @@ export default function Vitrine() {
     const [listaAcessorios, setListaAcessorios] = useState([]);
 
     async function VitrineChaveiros() {
-        // pegar lista de registros
 
-        const url = `http://4.172.207.208:5027/produto/Chaveiros`
+        const url = `http://localhost:5027/produto/Chaveiros`
         const resp = await axios.get(url)
         let tamanho = resp.data.length
 
         let produtos = []
 
         for (let i = 0; i < tamanho; i++) {
-            let url = `http://4.172.207.208:5027/produtos/${i + 1}/Chaveiros`
-            let resp = await axios.get(url)
 
-            let dados = resp.data
+            let dados = resp.data[i]
             let produto = {
                 imagem: dados.imagem,
                 alt: 'foto',
@@ -49,25 +46,23 @@ export default function Vitrine() {
     async function VitrineCanetas() {
         // pegar lista de registros
 
-        const url = `http://4.172.207.208:5027/produto/Canetas`
+        const url = `http://localhost:5027/produto/Canetas`
         const resp = await axios.get(url)
         let tamanho = resp.data.length
 
         let produtos = []
 
-        for (let i = 4, i2 = 0; i < tamanho + 4; i++, i2++) {
-            let url = `http://4.172.207.208:5027/produtos/${i + 1}/Canetas`
-            let resp = await axios.get(url)
+        for (let i = 0; i < tamanho; i++) {
 
-            let dados = resp.data
+            let dados = resp.data[i]
             let produto = {
                 imagem: dados.imagem,
                 alt: 'foto',
                 descricao: dados.descricao,
                 preco: dados.preco.toFixed(2)
             }
+            produtos[i] = produto
 
-            produtos[i2] = produto
             setListaCanetas([...produtos])
 
         }
@@ -77,24 +72,22 @@ export default function Vitrine() {
     async function VitrineAcessorios() {
         // pegar lista de registros
 
-        const url = `http://4.172.207.208:5027/produto/Acessorios`
+        const url = `http://localhost:5027/produto/Acessorios`
         const resp = await axios.get(url)
         let tamanho = resp.data.length
 
         let produtos = []
 
-        for (let i = 8, i2 = 0; i < tamanho + 8; i++, i2++) {
-            let url = `http://4.172.207.208:5027/produtos/${i + 1}/Acessorios`
-            let resp = await axios.get(url)
+        for (let i = 0; i < tamanho; i++) {
 
-            let dados = resp.data
+            let dados = resp.data[i]
             let produto = {
                 imagem: dados.imagem,
                 alt: 'foto',
                 descricao: dados.descricao,
                 preco: dados.preco.toFixed(2)
             }
-            produtos[i2] = produto
+            produtos[i] = produto
 
             setListaAcessorios([...produtos])
 
@@ -156,7 +149,6 @@ export default function Vitrine() {
                             {listaChaveiros.map(item =>
                                 <Produto
                                     imagem={item.imagem}
-                                    alt={item.alt}
                                     descrição={item.descricao}
                                     preço={item.preco}
                                 />
@@ -179,7 +171,6 @@ export default function Vitrine() {
                             {listaCanetas.map(item =>
                                 <Produto
                                     imagem={item.imagem}
-                                    alt={item.alt}
                                     descrição={item.descricao}
                                     preço={item.preco}
                                 />
@@ -202,7 +193,6 @@ export default function Vitrine() {
                             {listaAcessorios.map(item =>
                                 <Produto
                                     imagem={item.imagem}
-                                    alt={item.alt}
                                     descrição={item.descricao}
                                     preço={item.preco}
                                 />
