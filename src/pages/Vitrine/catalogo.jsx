@@ -5,8 +5,8 @@ import Produto from '../../components/Produto/produto.jsx';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 
-import banner1img1 from '../../imgs/bannerresinadois.png';
-import banner2img2 from '../../imgs/bannerresinatres.png';
+import banner1img1 from '../../imgs/01banner.png';
+import banner2img2 from '../../imgs/02banner.png';
 import 'swiper/swiper-bundle.css';
 
 import { useEffect, useState } from 'react';
