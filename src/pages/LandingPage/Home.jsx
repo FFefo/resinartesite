@@ -9,8 +9,14 @@ export default function Landingpage() {
       <Cabecalho />
 
       <div className='introducao'>
-        <p className='titulo'>ResinARTE</p>
-        <p>A arte vai além dos princípios do homem <br /> pois ela transcende ao inexplicável!</p>
+        <div className='texto-intro'>
+
+          <p className='titulo'>ResinARTE</p>
+          <p>A arte vai além dos princípios do homem <br /> pois ela transcende ao inexplicável!</p>
+
+          <h2>Descubra um pouco sobre mim</h2>
+          <i className="fa-solid fa-arrow-down-long"></i>
+        </div>
       </div>
 
       <div className='gradiente'>

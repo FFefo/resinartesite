@@ -33,7 +33,22 @@ header {
       font-family: 'Roboto';
       font-weight: 600;
     }
-    
+
   }
+
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 1.5em;
+    gap: 3em;
+
+    .links {
+      a {
+        padding: 0.5em 1.5em;
+      }
+    }
+  }
+
 
 }

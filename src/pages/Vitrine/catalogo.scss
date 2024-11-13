@@ -139,7 +139,21 @@
         }
     }
 
-    @media screen and (max-width: 1280px) {
+    @media(max-width: 1024px) {
+
+        .carrossel {
+            border-top: 9px solid #3A2E4B;
+            border-bottom: 9px solid #3A2E4B;
+
+            .item-banner {
+                height: 25em;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
         .catalogo {
             padding: 50px;
 
@@ -148,22 +162,6 @@
                 width: 100%;
                 max-width: none;
             }
-
-        }
-    }
-}
-
-@media(max-width: 1280px) {
-    .vitrine-catalogo {
-        .catalogo {
-            padding: 50px;
-
-            .sub-titulo {
-
-                color: aqua;
-
-            }
-
 
         }
     }
