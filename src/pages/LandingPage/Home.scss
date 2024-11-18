@@ -9,7 +9,7 @@
         background-size: cover;
         display: flex;
         flex-direction: column;
-        height: 880px;
+        height: 78em;
         justify-content: center;
 
         .texto-intro {
@@ -50,7 +50,7 @@
 
     .gradiente {
         background: linear-gradient(#DFB2E4, #EAE5FF);
-        height: 200px;
+        height: 15em;
     }
 
     .containers {
@@ -231,6 +231,44 @@
 
                 width: 45em;
             }
+        }
+
+    }
+
+    @media(max-width: 1280px) {
+
+        .introducao {
+            height: 45em;
+
+            .texto-intro {
+
+                h2,
+                .fa-solid {
+                    -webkit-text-stroke: 1.3px black;
+                    top: 70px;
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .gradiente {
+            background: linear-gradient(#DFB2E4, #EAE5FF);
+            height: 12em;
+        }
+
+        .containers {
+
+            .container01,
+            .container02,
+            .container03 {
+                padding: 1em;
+
+                width: 45em;
+            }
+        }
+
+        .gradientee{
+            height: 10em;
         }
 
     }

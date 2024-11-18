@@ -2,7 +2,7 @@
     height: 1121px;
     display: flex;
     flex-direction: column;
-    
+
     .secao-login {
         background-size: cover;
         background-image: url(../../../public/assets/images/su0.png);
@@ -51,7 +51,6 @@
             button {
                 margin-top: 30px;
                 padding: 15px;
-                width: 150px;
 
                 font-size: 20px;
                 background-color: #3A2E4B;
@@ -65,6 +64,43 @@
                 cursor: pointer;
             }
 
+        }
+    }
+
+    @media (max-width: 1280px) {
+        height: 74em;
+
+        .secao-login {
+            .caixinha {
+                width: 40em;
+                height: 41em;
+                border-radius: 4em;
+
+                h1 {
+                    font-size: 3em;
+                }
+
+                .campos {
+                    label {
+                        font-size: 2em;
+                        margin-top: 1em;
+                    }
+
+                    input {
+                        padding: 1.3em;
+                        width: 30em;
+                        border-radius: 2em;
+                        font-size: 1em;
+                    }
+                }
+
+                button{
+                    margin-top: 3em;
+                    padding: 1.2em 2em;
+                    font-size: 1.5em;
+                    border-radius: 3em;
+                }
+            }
         }
     }
 }

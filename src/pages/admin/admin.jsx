@@ -29,7 +29,7 @@ export default function LandingPageAdmin() {
 
             <Cabecalho />
 
-            <div className='conteúdo'>
+            <div className='conteudo'>
 
                 <button className='voltar' onClick={Sair}><i className="fa-solid fa-arrow-left"></i> Sair da conta</button>
 
