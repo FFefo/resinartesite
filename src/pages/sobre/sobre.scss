@@ -1,0 +1,165 @@
+.pagina-sobre {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../../public/assets/images/gradiente.png);
+    background-size: cover;
+    overflow: hidden;
+
+    .int {
+        height: 760px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .ttext {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .tt {
+                margin-top: 70px;
+                font-size: 30px;
+                font-family: 'Sen';
+            }
+
+            p {
+                text-align: center;
+            }
+
+        }
+
+        .tt2 {
+            margin-top: 140px;
+            color: white;
+            padding: 11px 70px;
+            border-radius: 20px;
+            background-color: #3A2E4B;
+            font-family: 'Sen';
+            font-weight: 600;
+            font-size: 30px;
+        }
+    }
+
+    .mss{
+        padding: 50px;
+        background-color: #FBE1E5;
+
+        .cont{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: white;
+            margin-top: -30px;
+
+            img{
+                position: relative;
+                top: 25px;
+                left: 120px;
+                width: 250px;
+                height: 250px;
+            }
+
+            .tt3{
+
+                .sbtt{
+                    padding: 10px 35px;
+                    width: 100px;
+                    background-color: #3A2E4B;
+                    border-radius: 30px;
+                    color: white;
+                    font-size: 23px;
+                }
+
+                .sbtt2{
+                    padding: 30px;
+                    background-color: #3A2E4B;
+                    border-radius: 35px;
+                }
+            }
+
+        }
+    }
+
+    .vss{
+        padding: 50px;
+        background-color: #A78BC2;
+
+        .cont1{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            color: white;
+            margin-top: -30px;
+
+            img{
+                position: relative;
+                top: 25px;
+                right: 120px;
+                width: 250px;
+                height: 250px;
+            }
+
+            .tt4{
+
+                .sbtt3{
+                    padding: 10px 35px;
+                    width: 100px;
+                    background-color: #3A2E4B;
+                    border-radius: 30px;
+                    color: white;
+                    font-size: 23px;
+                    position: relative;
+                    left: 550px;
+                }
+
+                .sbtt4{
+                    padding: 30px;
+                    background-color: #3A2E4B;
+                    border-radius: 35px;
+                }
+            }
+
+        }
+    }
+
+    .vlr{
+        padding: 50px;
+        background-color: #D9C8E9;
+
+        .cont2{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: white;
+            margin-top: -30px;
+
+            img{
+                position: relative;
+                top: 25px;
+                left: 120px;
+                width: 250px;
+                height: 250px;
+            }
+
+            .tt5{
+
+                .sbtt4{
+                    padding: 10px 35px;
+                    width: 100px;
+                    background-color: #3A2E4B;
+                    border-radius: 30px;
+                    color: white;
+                    font-size: 23px;
+                    position: relative;
+                }
+
+                .sbtt5{
+                    padding: 30px;
+                    background-color: #3A2E4B;
+                    border-radius: 35px;
+                }
+            }
+
+        }
+    }
+}

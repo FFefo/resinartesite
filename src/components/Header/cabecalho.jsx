@@ -21,13 +21,11 @@ export default function Cabecalho() {
               <Link to="/vitrine"> Vitrine </Link>
             </div>
 
-            {/* <div className='cl'>
-              <Link to="/colaboradores"> Colaboradores </Link>
-            </div> */}
+            <div className='sb'>
+              <Link to="/sobre"> Sobre </Link>
+            </div>
 
           </div>
-
-
 
           <div className='lg'>
             <Link to="/login"> Login </Link>
