@@ -94,6 +94,40 @@ export default function Sobre() {
 
       </div>
 
+      <div className='diferenciais'>
+
+        <h2 className='tt5'>Porque adquirir os meus serviços?</h2>
+
+        <div className='cont3'>
+
+          <div className='container1'>
+
+            <h2 className='sbtt6'>NhucoNhuco</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea doloremque corporis mollitia quasi vel dolorem earum fugit blanditiis, dolores libero neque, sequi unde est officiis ipsum quis fugiat error facilis?</p>
+
+          </div>
+
+          <div className='container2'>
+
+            <h2 className='sbtt7'>Lerolero</h2>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex corporis pariatur placeat debitis obcaecati repellendus, quas rerum nisi quis quaerat iste nobis unde iure, voluptatum a vel eius error velit.</p>
+
+          </div>
+
+          <div className='container3'>
+
+            <h2 className='sbtt8'>Nhoconhoco</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ex dolorem? Minus asperiores voluptates veritatis facere pariatur alias quidem debitis ea est, consectetur impedit neque perferendis nemo at, sapiente culpa?</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
       <Rodape />
 
     </div>
