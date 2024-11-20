@@ -28,12 +28,12 @@ export default function Login() {
         }
     }
 
-    
+
     async function teclaApertada(e) {
-        if(e.key === 'Enter'){
+        if (e.key === 'Enter') {
             entrar();
         }
-    
+
     }
 
     return (
@@ -59,10 +59,11 @@ export default function Login() {
 
                         <label htmlFor='senha'>Senha</label>
                         <input
+                            id='senha'
                             type="text"
                             value={senha}
                             onChange={(e) => setSenha(e.target.value)}
-                            onKeyUp={teclaApertada}/>
+                            onKeyUp={teclaApertada} />
 
 
                     </div>

@@ -181,9 +181,7 @@ export default function Inserir() {
 
                             :
 
-                            <img style={{
-                                padding: "10px",
-                            }}
+                            <img  className='semImagem'
                                 id='produto'
                                 src={'/assets/images/photo.png'}
                                 alt="Foto"

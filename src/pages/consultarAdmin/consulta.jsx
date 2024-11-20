@@ -42,7 +42,7 @@ export default function Consulta() {
 
             <button onClick={Buscar}>Consultar Produtos</button>
 
-            <table>
+            <table style={{ margin: '0px 0px 450px 0px',}}>
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -60,9 +60,9 @@ export default function Consulta() {
                 <tbody>
                     {produto.map(item =>
                         <tr>
-                            <td>{item.id}</td>
-                            <td>{item.nome}</td>
-                            <td>{item.descricao}</td>
+                            <td id='id'>{item.id}</td>
+                            <td id='nome'>{item.nome}</td>
+                            <td id='desc'>{item.descricao}</td>
                             <td>{item.categoria}</td>
                             <td>{item.quantidade}</td>
                             <td>{item.preco}</td>

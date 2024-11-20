@@ -16,6 +16,7 @@ export default function Landingpage() {
 
           <h2>Descubra um pouco sobre mim</h2>
           <i className="fa-solid fa-arrow-down-long"></i>
+
         </div>
       </div>
 
