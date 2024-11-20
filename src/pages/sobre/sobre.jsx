@@ -74,7 +74,7 @@ export default function Sobre() {
             <div className='sbtt4'>
 
               <p>
-                Minha visão é levar o artesanato em resina a um novo patamar, onde cada peça seja vista como uma obra de arte que une criatividade e funcionalidade. Quero ser reconhecida por criar produtos únicos, que tragam beleza e significado ao dia a dia das pessoas. Acredito no potencial do feito à mão como uma forma de resgatar a valorização do trabalho artesanal em um mundo tão industrializado. Meu objetivo é expandir minha marca, alcançar novos públicos e inspirar outras pessoas a explorarem seu talento criativo. Desejo construir um negócio sustentável, que respeite o meio ambiente e promova a economia local. Mais do que um empreendimento, vejo meu trabalho como um canal para espalhar alegria, autenticidade e inspiração.
+                Minha visão é levar o artesanato em resina a um novo patamar, onde <br /> cada peça seja vista como uma obra de arte que une criatividade e funcionalidade. <br /> Quero ser reconhecida por criar produtos únicos, que tragam beleza e significado ao <br /> dia a dia das pessoas. Acredito no potencial do feito à mão como uma forma de <br /> resgatar a valorização do trabalho artesanal em um mundo tão industrializado. <br /> Meu objetivo é expandir minha marca, alcançar novos públicos e inspirar outras <br /> pessoas a explorarem seu talento criativo. Desejo construir um negócio sustentável, <br /> que respeite o meio ambiente e promova a economia local. Mais do que um empreendimento, <br /> vejo meu trabalho como um canal para espalhar alegria, autenticidade e inspiração.
               </p>
 
             </div>
@@ -98,7 +98,7 @@ export default function Sobre() {
             <div className='sbtt5'>
 
               <p>
-                Meus valores como artesã são a base de tudo o que faço e guiam cada peça que crio. Valorizo a autenticidade, garantindo que cada produto seja único e carregue um toque especial de originalidade. Tenho um compromisso com a qualidade, cuidando de cada detalhe para oferecer peças duráveis e bem-acabadas. A sustentabilidade é essencial no meu trabalho, buscando minimizar resíduos e utilizar materiais de forma consciente. Prezo pela transparência e pelo respeito com meus clientes, oferecendo um atendimento ético e atencioso. A criatividade é meu maior motor, sempre me desafiando a inovar e trazer algo novo. Por fim, acredito no poder da arte para conectar pessoas e transmitir sentimentos, e isso é o que me inspira todos os dias.
+                Meus valores como artesã são a base de tudo o que faço e guiam <br /> cada peça que crio. Valorizo a autenticidade, garantindo que cada produto <br /> seja único e carregue um toque especial de originalidade. Tenho um compromisso <br /> com a qualidade, cuidando de cada detalhe para oferecer peças duráveis e bem-acabadas. <br /> A sustentabilidade é essencial no meu trabalho, buscando minimizar resíduos e utilizar <br /> materiais de forma consciente. Prezo pela transparência e pelo respeito com meus clientes, <br /> oferecendo um atendimento ético e atencioso. A criatividade é meu maior motor, sempre <br /> me desafiando a inovar e trazer algo novo. Por fim, acredito no poder da arte para conectar <br /> pessoas e transmitir sentimentos, e isso é o que me inspira todos os dias.
               </p>
 
             </div>
@@ -119,25 +119,37 @@ export default function Sobre() {
 
           <div className='container1'>
 
-            <h2 className='sbtt6'>NhucoNhuco</h2>
+            <h2 className='sbtt6'>PERSONALIZAÇÃO</h2>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea doloremque corporis mollitia quasi vel dolorem earum fugit blanditiis, dolores libero neque, sequi unde est officiis ipsum quis fugiat error facilis?</p>
+            <div className='ttx1'>
+
+              <p>Trabalho com pacotes de produtos <br />  pré-definidos, mas sempre estou disposta a criar algo personalizado com base nos gostos, necessidades, desejos e identidade dos meus clientes, criando com cuidado desde o esboço e os moldes da obra, até suas cores e complementos (como lantejoulas, glitter, flores, etc);</p>
+
+            </div>
 
           </div>
 
           <div className='container2'>
 
-            <h2 className='sbtt7'>Lerolero</h2>
+            <h2 className='sbtt7'>MANUTENÇÃO</h2>
 
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex corporis pariatur placeat debitis obcaecati repellendus, quas rerum nisi quis quaerat iste nobis unde iure, voluptatum a vel eius error velit.</p>
+            <div className='ttx2'>
+
+              <p>Como uma forma de manter a qualidade de meus produtos, ofereço serviços de manutenção, que visam assegurar a qualidade dos produtos oferecidos, desde o momento da produção e entrega, até a posse do cliente sobre o produto; <br />  caso o produto chegue danificado, imediatamente tomo providências de reembolso e/ou troca de produto, assim como em trabalhos mais complexos, caso ele venha a ser danificado de alguma forma no futuro, é oferecido uma manutenção a parte para restauração do produto.</p>
+
+            </div>
 
           </div>
 
           <div className='container3'>
 
-            <h2 className='sbtt8'>Nhoconhoco</h2>
+            <h2 className='sbtt8'>DESCONTOS</h2>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ex dolorem? Minus asperiores voluptates veritatis facere pariatur alias quidem debitis ea est, consectetur impedit neque perferendis nemo at, sapiente culpa?</p>
+            <div className='ttx3'>
+
+              <p>Já para os meus fiéis clientes, cupons de <br /> descontos são oferecidos em suas compras, dependendo do produto e da classificação, descontos sobre a produção do produto são oferecidos; o mesmo vale para empresas que compram e buscam pacotes fechados, uma vez meu cliente, o desconto se torna iminente.</p>
+
+            </div>
 
           </div>
 
