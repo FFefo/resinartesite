@@ -14,7 +14,22 @@ export default function Sobre() {
 
           <h2 className='tt'>Quer saber um pouco mais sobre meus serviços? Venha aqui!</h2>
 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab commodi <br /> aperiam, id, deserunt asperiores porro amet provident, sapiente eveniet nulla <br /> fugiat architecto nesciunt non eius sequi illo fuga et? Inventore! Lorem ipsum, dolor sit amet consectetur <br /> adipisicing elit. Veritatis inventore corporis ab iure cupiditate id, explicabo <br /> provident a ratione nobis ducimus eius, sunt doloribus adipisci? Sunt, sint rem! <br /> Quaerat, sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eius, inventore omnis, <br /> dignissimos incidunt, id similique modi officia facere quae accusamus <br /> voluptatibus quasi cumque unde! Quasi eius autem labore est. Lorem, ipsum dolor sit amet consectetur <br /> adipisicing elit. Iste perferendis reiciendis dolorem ullam quia itaque dignissimos quos cumque <br /> alias officia, expedita in quidem error omnis, inventore impedit a autem! Dicta. <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sint repudiandae neque ea <br /> consectetur tenetur esse vitae molestias ullam? Nulla eum odit iusto commodi architecto! <br /> Labore placeat perspiciatis voluptatum suscipit? Lorem ipsum dolor sit, amet <br /> consectetur adipisicing elit. Perferendis et earum, sint, deserunt recusandae excepturi explicabo <br /> reprehenderit cum, voluptatem est nulla incidunt esse laudantium <br /> quibusdam enim illo laborum beatae commodi.</p>
+          <p>Você já imaginou transformar momentos especiais em peças únicas e personalizadas? <br /> Meu trabalho com artesanato em resina traz essa magia para o seu dia a dia. Ofereço chaveiros personalizados, <br /> perfeitos para presentear ou dar aquele toque exclusivo ao seu estilo. Cada peça é feita à mão, com cuidado <br /> nos mínimos detalhes e a possibilidade de incluir cores, brilhos e até pequenas lembranças encapsuladas.
+
+            <br />
+            <br />
+
+            Está organizando um evento especial? Posso criar lembrancinhas únicas que deixarão seus convidados encantados. <br /> Imagine oferecer um presente que vai além do material, trazendo consigo memórias e sentimentos.
+
+            <br />
+            <br />
+
+            Além disso, aceito encomendas personalizadas para atender exatamente o que você precisa. <br /> Seja para datas comemorativas, eventos corporativos ou apenas um mimo especial para você, as possibilidades são infinitas.
+
+            <br />
+            <br />
+
+            Se quiser saber mais, entre em contato e descubra como transformar ideias em arte. <br /> Estou pronta para criar algo que seja só seu!</p>
 
         </div>
 
@@ -33,8 +48,10 @@ export default function Sobre() {
             <div className='sbtt2'>
 
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, nobis <br /> quis laborum tempora enim unde fuga ut odit natus voluptate dolor rerum qui eum ex <br /> pariatur amet nulla deserunt beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br /> Voluptatibus labore consequuntur accusamus maxime error, nulla at saepe minus, odit, officia <br /> distinctio velit beatae? Suscipit molestiae omnis, quo ab perferendis animi! Lorem ipsum dolor <br /> sit amet consectetur adipisicing elit. A animi temporibus eos optio! Distinctio quas <br /> ipsam odit! Doloremque iusto tenetur aspernatur aliquam. <br /> Corrupti incidunt tempora, labore accusantium quis magnam commodi.
+                Minha missão como artesã é transformar ideias em peças únicas, cheias de significado <br /> e personalidade. Trabalho com resina porque acredito no poder da arte de capturar momentos <br /> e emoções, traduzindo-os em produtos duráveis e encantadores. Cada peça que crio é feita com <br /> carinho, atenção aos detalhes e o desejo de levar beleza ao dia a dia das pessoas. Quero inspirar <br /> clientes a valorizarem o feito à mão, apreciando o tempo e dedicação que envolvem cada criação. <br /> Meu compromisso é oferecer produtos de qualidade que transmitam amor e autenticidade. <br /> Por meio do artesanato, busco compartilhar histórias e criar conexões. Mais do que vender, <br /> minha missão é encantar e emocionar.
               </p>
+
+              <br />
 
             </div>
 
@@ -57,7 +74,7 @@ export default function Sobre() {
             <div className='sbtt4'>
 
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, nobis <br /> quis laborum tempora enim unde fuga ut odit natus voluptate dolor rerum qui eum ex <br /> pariatur amet nulla deserunt beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br /> Voluptatibus labore consequuntur accusamus maxime error, nulla at saepe minus, odit, officia <br /> distinctio velit beatae? Suscipit molestiae omnis, quo ab perferendis animi! Lorem ipsum dolor <br /> sit amet consectetur adipisicing elit. A animi temporibus eos optio! Distinctio quas <br /> ipsam odit! Doloremque iusto tenetur aspernatur aliquam. <br /> Corrupti incidunt tempora, labore accusantium quis magnam commodi.
+                Minha visão é levar o artesanato em resina a um novo patamar, onde cada peça seja vista como uma obra de arte que une criatividade e funcionalidade. Quero ser reconhecida por criar produtos únicos, que tragam beleza e significado ao dia a dia das pessoas. Acredito no potencial do feito à mão como uma forma de resgatar a valorização do trabalho artesanal em um mundo tão industrializado. Meu objetivo é expandir minha marca, alcançar novos públicos e inspirar outras pessoas a explorarem seu talento criativo. Desejo construir um negócio sustentável, que respeite o meio ambiente e promova a economia local. Mais do que um empreendimento, vejo meu trabalho como um canal para espalhar alegria, autenticidade e inspiração.
               </p>
 
             </div>
@@ -81,7 +98,7 @@ export default function Sobre() {
             <div className='sbtt5'>
 
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, nobis <br /> quis laborum tempora enim unde fuga ut odit natus voluptate dolor rerum qui eum ex <br /> pariatur amet nulla deserunt beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br /> Voluptatibus labore consequuntur accusamus maxime error, nulla at saepe minus, odit, officia <br /> distinctio velit beatae? Suscipit molestiae omnis, quo ab perferendis animi! Lorem ipsum dolor <br /> sit amet consectetur adipisicing elit. A animi temporibus eos optio! Distinctio quas <br /> ipsam odit! Doloremque iusto tenetur aspernatur aliquam. <br /> Corrupti incidunt tempora, labore accusantium quis magnam commodi.
+                Meus valores como artesã são a base de tudo o que faço e guiam cada peça que crio. Valorizo a autenticidade, garantindo que cada produto seja único e carregue um toque especial de originalidade. Tenho um compromisso com a qualidade, cuidando de cada detalhe para oferecer peças duráveis e bem-acabadas. A sustentabilidade é essencial no meu trabalho, buscando minimizar resíduos e utilizar materiais de forma consciente. Prezo pela transparência e pelo respeito com meus clientes, oferecendo um atendimento ético e atencioso. A criatividade é meu maior motor, sempre me desafiando a inovar e trazer algo novo. Por fim, acredito no poder da arte para conectar pessoas e transmitir sentimentos, e isso é o que me inspira todos os dias.
               </p>
 
             </div>
