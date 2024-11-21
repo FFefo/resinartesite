@@ -25,28 +25,49 @@
         font-weight: 700;
     }
 
+    @media (max-width: 1440px) {
+        img {
+            width: 11.5em;
+            height: 11.5em;
+        }
+
+        .des {
+            font-size: 1.2em;
+            width: 11em;
+
+        }
+    }
+
     @media (max-width: 1280px) {
         img {
             width: 12em;
             height: 12em;
-            border-radius: 15px;
         }
 
         .des {
             font-size: 1.3em;
-            font-family: 'Roboto';
-            font-weight: 600;
-            color: #524D4D;
-            margin: 10px 0px;
             width: 10em;
+
+        }
+    }
+
+    @media (max-width: 1024px) {
+        img {
+            width: 10em;
+            height: 10em;
+            border-radius: 15px;
+        }
+
+        .des {
+            font-size: 1.2em;
+            margin: 10px 0px;
+            width: 8.7em;
 
         }
 
         .preço {
             margin: 0px;
-            font-size: 1.7em;
-            font-family: 'Roboto';
-            font-weight: 700;
+            font-size: 1.6em;
         }
     }
 

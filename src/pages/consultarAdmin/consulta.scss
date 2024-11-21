@@ -4,6 +4,7 @@
     flex-direction: column;
     background-image: url(../../../public/assets/images/gradiente.png);
     background-size: cover;
+    height: 100%;
 
     .voltar {
         font-size: 28px;
@@ -31,7 +32,6 @@
         flex-direction: column;
         align-items: center;
         gap: 20px;
-        margin-bottom: 50px;
 
         thead {
             background-color: #b087cc;
@@ -91,6 +91,16 @@
         }
     }
 
+    .naoApertou{
+        margin-bottom: 31.6em;
+
+    }
+
+    .apertou{
+        margin-bottom: 30px;
+
+    }
+
     @media (max-width: 1280px) {
         table {
             thead {
@@ -120,6 +130,41 @@
                     #nome {
                         width: 80px;
                     }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        table {
+            thead {
+                width: 60em;
+
+                tr {
+                    gap: 2em;
+                }
+            }
+
+            tbody {
+                width: 60em;
+
+                tr {
+                    td {
+                        width: 70px;
+                    }
+
+                    #id {
+                        width: 10px;
+                    }
+
+                    #desc {
+                        width: 125px;
+                    }
+
+                    #nome {
+                        width: 4.5em;
+                    }
+
                 }
             }
         }

@@ -1,4 +1,4 @@
-import './catalogo.scss';
+    import './catalogo.scss';
 import Cabecalho from '../../components/Header/cabecalho.jsx';
 import Rodape from '../../components/Body/rodape.jsx';
 import Produto from '../../components/Produto/produto.jsx';

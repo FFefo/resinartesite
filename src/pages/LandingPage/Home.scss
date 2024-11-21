@@ -60,96 +60,10 @@
         background-image: url(../../../public/assets/images/gradientedois.png);
         background-size: cover;
         padding: 50px 0px;
+        gap: 100px;
 
-        .container01 {
-
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
-
-            padding: 40px 0px;
-
-            background-color: rgba(255, 255, 255, 0.636);
-            border: 3px solid white;
-            border-radius: 75px;
-
-            text-align: center;
-            width: 700px;
-
-            .texto {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                text-align: left;
-
-                width: 310px;
-
-                h1 {
-                    font-family: 'Staatliches';
-                }
-
-                p {
-                    font-size: 18px;
-                    line-height: 21px;
-                    font-family: 'Sarabun';
-                }
-            }
-
-            img {
-                border-radius: 35px;
-                width: 300px;
-                height: 350px;
-
-            }
-        }
-
-        .container02 {
-
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-evenly;
-
-            padding: 40px 0px;
-            margin: 150px 0px;
-
-            background-color: rgba(255, 255, 255, 0.636);
-            border: 3px solid white;
-            border-radius: 75px;
-
-            text-align: center;
-            width: 700px;
-
-            .texto {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                text-align: left;
-
-                width: 310px;
-
-                h1 {
-                    font-family: 'Staatliches';
-                    width: 130px;
-                }
-
-                p {
-                    font-size: 18px;
-                    line-height: 21px;
-                    font-family: 'Sarabun';
-                }
-            }
-
-            img {
-                border-radius: 35px;
-                width: 300px;
-                height: 350px;
-
-            }
-
-        }
-
+        .container01,
+        .container02,
         .container03 {
 
             display: flex;
@@ -176,10 +90,10 @@
 
                 h1 {
                     font-family: 'Staatliches';
-                    width: 130px;
                 }
 
-                p {
+                p,
+                li {
                     font-size: 18px;
                     line-height: 21px;
                     font-family: 'Sarabun';
@@ -192,7 +106,6 @@
                 height: 350px;
 
             }
-
         }
     }
 
@@ -201,25 +114,18 @@
         height: 30px;
     }
 
-    @media(max-width: 1024px) {
-
+    @media (max-width: 1440px) {
         .introducao {
-            height: 35em;
+            height: 50em;
 
             .texto-intro {
 
                 h2,
                 .fa-solid {
-                    -webkit-text-stroke: 1.3px black;
-                    top: 70px;
-                    font-size: 24px;
+                    top: 6.5em;
                 }
             }
-        }
 
-        .gradiente {
-            background: linear-gradient(#DFB2E4, #EAE5FF);
-            height: 12em;
         }
 
         .containers {
@@ -227,12 +133,28 @@
             .container01,
             .container02,
             .container03 {
-                padding: 1em;
+                padding: 5.5em 2.5em;
 
-                width: 45em;
+                width: 50em;
+
+                .texto {
+                    width: 23em;
+
+                    h1{
+                        font-size: 2.5em;
+                    }
+
+                    p {
+                        font-size: 1.3em;
+                    }
+                }
+
+                img{
+                    width: 20em;
+                    height: 22em;
+                }
             }
         }
-
     }
 
     @media(max-width: 1280px) {
@@ -245,7 +167,7 @@
                 h2,
                 .fa-solid {
                     -webkit-text-stroke: 1.3px black;
-                    top: 70px;
+                    top: 10em;
                     font-size: 24px;
                 }
             }
@@ -267,9 +189,44 @@
             }
         }
 
-        .gradientee{
+        .gradientee {
             height: 10em;
         }
 
     }
+
+    @media(max-width: 1024px) {
+
+        .introducao {
+            height: 36em;
+
+            .texto-intro {
+
+                h2,
+                .fa-solid {
+                    -webkit-text-stroke: 1.3px black;
+                    top: 10em;
+                    font-size: 24px;
+                }
+            }
+        }
+
+        .gradiente {
+            background: linear-gradient(#DFB2E4, #EAE5FF);
+            height: 12em;
+        }
+
+        .containers {
+
+            .container01,
+            .container02,
+            .container03 {
+                padding: 1em;
+
+                width: 45em;
+            }
+        }
+
+    }
+
 }

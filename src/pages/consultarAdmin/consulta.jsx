@@ -8,6 +8,7 @@ export default function Consulta() {
 
     const [token, setToken] = useState(null);
     const [produto, setProduto] = useState([]);
+    const [classe, setClasse] = useState('');
 
     const navigate = useNavigate()
 
@@ -24,6 +25,15 @@ export default function Consulta() {
         await Buscar()
     }
 
+    function teste(produtinho) {
+        if (produto[0] == null) {
+            setClasse('naoApertou')
+        }
+        else {
+            setClasse('apertou')
+        }
+    }
+
     useEffect(() => {
         let token = localStorage.getItem('USUARIO')
         setToken(token)
@@ -32,6 +42,10 @@ export default function Consulta() {
             navigate('/')
         }
     }, [])
+
+    useEffect(() => {
+        teste(produto)
+    }, [produto])
 
 
     return (
@@ -42,7 +56,7 @@ export default function Consulta() {
 
             <button onClick={Buscar}>Consultar Produtos</button>
 
-            <table style={{ margin: '0px 0px 450px 0px',}}>
+            <table className={classe}>
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -66,12 +80,7 @@ export default function Consulta() {
                             <td>{item.categoria}</td>
                             <td>{item.quantidade}</td>
                             <td>{item.preco}</td>
-                            {/* <img
-                                    id='produto'
-                                    src={item.imagem}
-                                    alt={item.imagem}
-                                /> */}
-                            <td>{item.usuario}</td>
+                            <td id='user'>{item.usuario}</td>
                             <div className='opcoes'>
                                 <Link to={`/adicionar/${item.id}`}><i class="fa-solid fa-pen td"></i></Link>
                                 <Link onClick={() => Remover(item.id)}><i className="fa-solid fa-trash td"></i></Link>

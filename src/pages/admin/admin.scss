@@ -33,7 +33,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                
+
 
                 h1 {
                     width: 650px;
@@ -79,6 +79,7 @@
             }
 
             .cont-sup {
+
                 .text {
                     h1 {
                         font-size: 4.5em;
@@ -90,7 +91,35 @@
                 }
             }
 
-            .botoes{
+            .botoes {
+                gap: 5em;
+            }
+        }
+    }
+
+    @media (max-width: 1280px) {
+        .conteudo {
+            padding-bottom: inherit;
+
+            .voltar {
+                font-size: 2em;
+                margin: 1em 0 0 1em;
+            }
+
+            .cont-sup {
+
+                .text {
+                    h1 {
+                        font-size: 4em;
+                    }
+
+                    p {
+                        font-size: 1.25em;
+                    }
+                }
+            }
+
+            .botoes {
                 gap: 5em;
             }
         }

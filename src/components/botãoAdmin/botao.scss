@@ -29,17 +29,32 @@
 
         font-weight: 500;
         font-size: 35px;
-
+        text-align: center;
+        
         a {
             color: inherit;
             text-decoration: none;
-            width: 150px;
         }
     }
 
     @media (max-width: 1280px) {
         .bola {
             width: 8em;
+        }
+
+    }
+
+    @media (max-width: 1024px) {
+        .bola {
+            width: 6em;
+            border-radius: 5em;
+        }
+
+
+        .texto {
+            width: 10em;
+            font-size: 1.5em;
+
         }
 
     }
