@@ -26,7 +26,7 @@ export default function Consulta() {
         await Buscar()
     }
 
-    function teste(produtinho) {
+    function apertouBotao(produto) {
         if (produto[0] == null) {
             setClasse('naoApertou')
         }
@@ -45,7 +45,7 @@ export default function Consulta() {
     }, [])
 
     useEffect(() => {
-        teste(produto)
+        apertouBotao(produto)
     }, [produto])
 
 
@@ -67,7 +67,7 @@ export default function Consulta() {
                         <th>Quantidade</th>
                         <th>Preço</th>
                         {/* <th>Imagem</th> */}
-                        <th>Usuário</th>
+                        {/* <th>Usuário</th> */}
                         <th>Opções</th>
                     </tr>
                 </thead>
@@ -78,10 +78,10 @@ export default function Consulta() {
                             <td id='id'>{item.id}</td>
                             <td id='nome'>{item.nome}</td>
                             <td id='desc'>{item.descricao}</td>
-                            <td>{item.categoria}</td>
+                            <td id='cat'>{item.categoria}</td>
                             <td>{item.quantidade}</td>
                             <td>{item.preco}</td>
-                            <td id='user'>{item.usuario}</td>
+                            {/* <td id='user'>{item.usuario}</td> */}
                             <div className='opcoes'>
                                 <Link to={`/adicionar/${item.id}`}><i class="fa-solid fa-pen td"></i></Link>
                                 <Link onClick={() => Remover(item.id)}><i className="fa-solid fa-trash td"></i></Link>

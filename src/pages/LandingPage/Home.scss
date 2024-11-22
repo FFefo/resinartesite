@@ -140,7 +140,7 @@
                 .texto {
                     width: 23em;
 
-                    h1{
+                    h1 {
                         font-size: 2.5em;
                     }
 
@@ -149,7 +149,7 @@
                     }
                 }
 
-                img{
+                img {
                     width: 20em;
                     height: 22em;
                 }
@@ -227,6 +227,33 @@
             }
         }
 
+    }
+
+    @media(max-width:425px) {
+        .introducao {
+            .texto-intro {
+                .titulo {
+                    font-size: 56px;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .containers {
+
+            padding: 0px;
+            background-size: contain;
+
+            .container01,
+            .container02,
+            .container03 {
+                padding: 5px;
+                width: 20em;
+            }
+        }
     }
 
 }

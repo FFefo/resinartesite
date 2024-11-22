@@ -16,19 +16,6 @@ export default function InserirCliente() {
     const navigate = useNavigate();
     const { id } = useParams();
 
-    function alterarImagem(e) {
-        const file = e.target.files[0];
-
-        if (file) {
-            const reader = new FileReader();
-            reader.onloadend = () => {
-                setImagem(reader.result);
-            };
-
-            reader.readAsDataURL(file);
-        }
-    }
-
     async function Inserir() {
         let paramsCorpo = {
             "nome": nome,
@@ -79,7 +66,7 @@ export default function InserirCliente() {
     }, [])
 
     return (
-        <div className='pagina-inserir'>
+        <div className='pagina-inserir-cliente'>
 
             <Cabecalho />
 
@@ -121,67 +108,9 @@ export default function InserirCliente() {
                             value={cep}
                             onChange={e => setCep(e.target.value)} />
 
-                        <div className='campo-imagem'>
-
-                            <label for="imagem">Imagem:</label>
-
-                            <div className='camp'>
-
-                                <input
-                                    type="file"
-                                    id='imgslt'
-                                    accept='image/*'
-                                    onChange={alterarImagem} />
-
-                                <label htmlFor="imgslt" className='btimg'>Escolher Arquivo</label>
-
-                                <div className='rmvbt'>
-
-                                    <i class='fa-solid fa-trash botao' onClick={() => setImagem(null)} />
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <label htmlFor="Usuário">Usuário:</label>
-                        <input
-                            type="text"
-                            value={usuario}
-                            onChange={e => setUsuario(e.target.value)} />
-
 
                         <button onClick={Inserir}>{id ? "Alterar" : "Adicionar"}</button>
 
-                    </div>
-                </div>
-
-                <div className='secao-imagem'>
-
-                    <p>Imagem escolhida:</p>
-
-                    <div className='caixinha-imagem'>
-
-                        {imagem ?
-
-                            <img style={{
-                                width: "100%",
-                            }}
-                                id='produto'
-                                src={imagem}
-                                alt="Foto"
-                            />
-
-                            :
-
-                            <img  className='semImagem'
-                                id='produto'
-                                src={'/assets/images/photo.png'}
-                                alt="Foto"
-                            />
-
-                        }
                     </div>
                 </div>
             </div>

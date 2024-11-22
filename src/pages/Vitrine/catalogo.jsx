@@ -1,4 +1,4 @@
-    import './catalogo.scss';
+import './catalogo.scss';
 import Cabecalho from '../../components/Header/cabecalho.jsx';
 import Rodape from '../../components/Body/rodape.jsx';
 import Produto from '../../components/Produto/produto.jsx';
@@ -18,6 +18,9 @@ export default function Vitrine() {
     const [listaChaveiros, setListaChaveiros] = useState([]);
     const [listaCanetas, setListaCanetas] = useState([]);
     const [listaAcessorios, setListaAcessorios] = useState([]);
+    const [classe, setClasse] = useState('');
+    const [classe2, setClasse2] = useState('');
+    const [classe3, setClasse3] = useState('');
 
     async function VitrineChaveiros() {
 
@@ -101,6 +104,24 @@ export default function Vitrine() {
         { id: 2, img: banner2img2 }
     ]
 
+    function apertouBotao(chav, cant, acss) {
+        if (chav.length > 4) {
+            setClasse('setaLeft')
+        }
+        else if(cant.length > 4){
+            setClasse2('setaLeft')
+        }
+        else if(acss.length > 4){
+            setClasse3('setaLeft')
+        }
+        else {
+            setClasse('semClasse')
+        }
+    }
+    useEffect(() => {
+        apertouBotao(listaChaveiros, listaCanetas, listaAcessorios)
+    }, [listaChaveiros, listaCanetas, listaAcessorios])
+
     useEffect(() => {
         VitrineChaveiros()
         VitrineCanetas()
@@ -145,8 +166,7 @@ export default function Vitrine() {
 
                         <div className='produtos'>
 
-                            <h1>◀  </h1>
-
+                            <h1 className={classe}>◀  </h1>
                             {listaChaveiros.map(item =>
                                 <Produto
                                     imagem={item.imagem}
@@ -154,7 +174,6 @@ export default function Vitrine() {
                                     preço={item.preco}
                                 />
                             )}
-
                             <h1>▶  </h1>
 
                         </div>
@@ -167,7 +186,7 @@ export default function Vitrine() {
 
                         <div className='produtos'>
 
-                            <h1>◀  </h1>
+                            <h1  className={classe2}>◀  </h1>
 
                             {listaCanetas.map(item =>
                                 <Produto
@@ -189,7 +208,7 @@ export default function Vitrine() {
 
                         <div className='produtos'>
 
-                            <h1>◀  </h1>
+                            <h1  className={classe3}>◀  </h1>
 
                             {listaAcessorios.map(item =>
                                 <Produto

@@ -98,7 +98,7 @@
                 flex-direction: column;
                 max-width: none;
 
-                
+
             }
 
         }
@@ -127,6 +127,12 @@
             .vt {
                 flex-direction: column;
                 max-width: none;
+
+                .produtos {
+                    .setaLeft {
+                        margin-left: -1.8em;
+                    }
+                }
             }
 
         }
@@ -155,6 +161,8 @@
                 width: 95%;
                 max-width: none;
                 padding: 3em;
+
+
             }
 
         }

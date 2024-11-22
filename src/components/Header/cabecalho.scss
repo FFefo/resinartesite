@@ -36,19 +36,26 @@ header {
 
   }
 
-}
 
-@media (max-width: 1024px) {
-  header {
-    padding: 1.5em;
-    gap: 3em;
+  @media (max-width: 1024px) {
+    header {
+      padding: 1.5em;
+      gap: 3em;
 
-    .links {
-      a {
-        padding: 0.5em 1.5em;
+      .links {
+        a {
+          padding: 0.5em 1.5em;
+        }
       }
     }
+
   }
 
 
+}
+
+.cabecalho {
+  @media (max-width: 425px) {
+    width: auto;
+  }
 }

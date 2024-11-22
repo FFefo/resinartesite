@@ -72,6 +72,44 @@
         }
     }
 
+    @media (max-width: 1440px) {
+        height: 74em;
+
+        .secao-login {
+            .caixinha {
+                width: 32em;
+                height: 34em;
+                border-radius: 3em;
+
+                h1 {
+                    font-size: 2.5em;
+                }
+
+                .campos {
+                    label {
+                        font-size: 1.5em;
+                        margin-top: 1em;
+                    }
+
+                    input {
+                        padding: 1em;
+                        width: 25em;
+                        border-radius: 2em;
+                        font-size: 1em;
+                    }
+
+                    margin-bottom: 2em;
+                }
+
+                button {
+                    padding: 0.7em 2.5em;
+                    font-size: 2em;
+                    border-radius: 3em;
+                }
+            }
+        }
+    }
+
     @media (max-width: 1280px) {
         height: 74em;
 

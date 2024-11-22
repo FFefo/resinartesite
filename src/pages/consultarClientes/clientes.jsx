@@ -49,7 +49,7 @@ export default function ConsultaClientes() {
 
 
     return (
-        <div className='pagina-consulta'>
+        <div className='pagina-consulta-cliente'>
             <Cabecalho />
 
             <Link to='/admin' className='voltar'><i className="fa-solid fa-arrow-left"></i>  Voltar à pagina de admin</Link>

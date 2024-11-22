@@ -40,7 +40,7 @@ export default function Inserir() {
             "quantidade": quantidade,
             "preco": preco,
             "imagem": imagem,
-            "usuario": usuario
+            "idUsuario": usuario
         }
 
         if (id === undefined) {
@@ -86,7 +86,7 @@ export default function Inserir() {
     }, [])
 
     return (
-        <div className='pagina-inserir'>
+        <div className='pagina-inserir-produto'>
 
             <Cabecalho />
 

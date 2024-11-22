@@ -69,6 +69,35 @@
         }
     }
 
+    @media (max-width: 1440px) {
+        .conteudo {
+            padding-bottom: 3em;
+
+            .voltar {
+                font-size: 2em;
+                margin: 1em 0 0 1em;
+            }
+
+            .cont-sup {
+
+                .text {
+                    h1 {
+                        font-size: 4.5em;
+                    }
+
+                    p {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+
+            .botoes {
+                gap: 5em;
+            }
+        }
+    }
+
+
     @media (max-width: 1280px) {
         .conteudo {
             padding-bottom: 3em;
@@ -97,7 +126,7 @@
         }
     }
 
-    @media (max-width: 1280px) {
+    @media (max-width: 1024px) {
         .conteudo {
             padding-bottom: inherit;
 

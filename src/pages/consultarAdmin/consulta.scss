@@ -40,7 +40,8 @@
 
             tr {
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: center;
+                gap: 200px;
                 align-items: center;
                 height: 70px;
             }
@@ -54,8 +55,9 @@
             tr {
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 height: 70px;
-                justify-content: space-around;
+                gap: 100px;
 
                 .opcoes {
                     display: flex;
@@ -91,23 +93,26 @@
         }
     }
 
-    .naoApertou{
+    .naoApertou {
         margin-bottom: 31.6em;
 
     }
 
-    .apertou{
+    .apertou {
         margin-bottom: 30px;
 
     }
 
-    @media (max-width: 1280px) {
+    @media (max-width: 1440px) {
         table {
             thead {
                 width: 75em;
 
                 tr {
-                    gap: 4em;
+                    justify-content: space-evenly;
+                    margin-left: 0px;
+                    gap: 6.5em;
+                    padding: 0px 50px;
                 }
             }
 
@@ -115,6 +120,9 @@
                 width: 75em;
 
                 tr {
+                    gap: 6.5em;
+                    height: 5.5em;
+
                     td {
                         width: 70px;
                     }
@@ -124,11 +132,59 @@
                     }
 
                     #desc {
-                        width: 150px;
+                        width: 140px;
                     }
 
                     #nome {
-                        width: 80px;
+                        width: 85px;
+                    }
+
+                    #cat {
+                        margin-left: -40px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1280px) {
+        table {
+            thead {
+                width: 75em;
+
+                tr {
+                    justify-content: space-evenly;
+                    margin-left: 0px;
+                    gap: 5.5em;
+                    padding: 0px 50px;
+                }
+            }
+
+            tbody {
+                width: 75em;
+
+                tr {
+                    gap: 6.5em;
+                    height: 5.5em;
+
+                    td {
+                        width: 70px;
+                    }
+
+                    #id {
+                        width: 10px;
+                    }
+
+                    #desc {
+                        width: 140px;
+                    }
+
+                    #nome {
+                        width: 85px;
+                    }
+
+                    #cat {
+                        margin-left: -40px;
                     }
                 }
             }
@@ -149,6 +205,9 @@
                 width: 60em;
 
                 tr {
+                    gap: 4em;
+                    height: 5.5em;
+
                     td {
                         width: 70px;
                     }

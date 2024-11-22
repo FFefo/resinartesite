@@ -25,8 +25,8 @@ export default function ConsultaPedidos() {
         await Buscar()
     }
 
-    function teste(clientinho) {
-        if (clientinho[0] == null) {
+    function teste(pedidinho) {
+        if (pedidinho[0] == null) {
             setClasse('naoApertou')
         }
         else {
@@ -49,7 +49,7 @@ export default function ConsultaPedidos() {
 
 
     return (
-        <div className='pagina-consulta'>
+        <div className='pagina-consulta-pedido'>
             <Cabecalho />
 
             <Link to='/admin' className='voltar'><i className="fa-solid fa-arrow-left"></i>  Voltar à pagina de admin</Link>
