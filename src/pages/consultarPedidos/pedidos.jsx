@@ -1,25 +1,25 @@
-import './clientes.scss';
+import './pedidos.scss';
 import Cabecalho from '../../components/Header/cabecalho';
 import { Link, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-export default function ConsultaClientes() {
+export default function ConsultaPedidos() {
 
     const [token, setToken] = useState(null);
-    const [cliente, setCliente] = useState([]);
+    const [pedido, setPedido] = useState([]);
     const [classe, setClasse] = useState('');
 
     const navigate = useNavigate()
 
     async function Buscar() {
-        const url = `http://localhost:5027/clientes?x-access-token=${token}`;
+        const url = `http://localhost:5027/pedidos?x-access-token=${token}`;
         let resp = await axios.get(url);
-        setCliente(resp.data);
+        setPedido(resp.data);
     }
 
     async function Remover(id) {
-        const url = `http://localhost:5027/clientes/${id}?x-access-token=${token}`;
+        const url = `http://localhost:5027/pedidos/${id}?x-access-token=${token}`;
         await axios.delete(url);
 
         await Buscar()
@@ -44,8 +44,8 @@ export default function ConsultaClientes() {
     }, [])
 
     useEffect(() => {
-        teste(cliente)
-    }, [cliente])
+        teste(pedido)
+    }, [pedido])
 
 
     return (
@@ -54,29 +54,31 @@ export default function ConsultaClientes() {
 
             <Link to='/admin' className='voltar'><i className="fa-solid fa-arrow-left"></i>  Voltar à pagina de admin</Link>
 
-            <button onClick={Buscar}>Consultar Clientes</button>
+            <button onClick={Buscar}>Consultar Pedidos</button>
 
             <table className={classe}>
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Nome</th>
-                        <th>Idade</th>
-                        <th>Telefone</th>
-                        <th>Email</th>
-                        <th>CEP</th>
+                        <th>ClienteID</th>
+                        <th>ProdutoID</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                        <th>DataDeEntrega</th>
+                        <th>PedidoEntregue</th>
                     </tr>
                 </thead>
 
                 <tbody>
-                    {cliente.map(item =>
+                    {pedido.map(item =>
                         <tr>
                             <td id='id'>{item.id}</td>
-                            <td id='nome'>{item.nome}</td>
-                            <td id='idade'>{item.idade}</td>
-                            <td>{item.telefone}</td>
-                            <td>{item.email}</td>
-                            <td>{item.cep}</td>
+                            <td id='cliente_id'>{item.clienteId}</td>
+                            <td id='produto_id'>{item.produtoId}</td>
+                            <td>{item.quantidade}</td>
+                            <td>{item.preco}</td>
+                            <td>{item.dataEntrega}</td>
+                            <td>{item.entregue}</td>
                             <div className='opcoes'>
                                 <Link to={`/adicionar/${item.id}`}><i class="fa-solid fa-pen td"></i></Link>
                                 <Link onClick={() => Remover(item.id)}><i className="fa-solid fa-trash td"></i></Link>
