@@ -8,6 +8,10 @@
         border-radius: 15px;
     }
 
+    img:hover {
+        width: 13em;
+    }
+
     .des {
         font-size: 1.1em;
         font-family: 'Roboto';
@@ -29,6 +33,12 @@
         img {
             width: 11.5em;
             height: 11.5em;
+            transition: 0.5s;
+
+        }
+
+        img:hover {
+            width: 13em;
         }
 
         .des {
@@ -42,6 +52,12 @@
         img {
             width: 12em;
             height: 12em;
+
+        }
+
+        img:hover {
+            width: 13em;
+            height: 13em;
         }
 
         .des {

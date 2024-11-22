@@ -65,6 +65,7 @@ export default function ConsultaClientes() {
                         <th>Telefone</th>
                         <th>Email</th>
                         <th>CEP</th>
+                        <th>Opções</th>
                     </tr>
                 </thead>
 
@@ -75,7 +76,7 @@ export default function ConsultaClientes() {
                             <td id='nome'>{item.nome}</td>
                             <td id='idade'>{item.idade}</td>
                             <td>{item.telefone}</td>
-                            <td>{item.email}</td>
+                            <td id='email'>{item.email}</td>
                             <td>{item.cep}</td>
                             <div className='opcoes'>
                                 <Link to={`/adicionar/${item.id}`}><i class="fa-solid fa-pen td"></i></Link>
