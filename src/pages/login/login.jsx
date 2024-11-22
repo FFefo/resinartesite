@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios'
 import { useState } from 'react';
 import Cabecalho from '../../components/Header/cabecalho.jsx';
+import { api } from '../../services/axios.js';
 
 export default function Login() {
     const [nome, setNome] = useState('');
@@ -16,7 +17,7 @@ export default function Login() {
             "senha": senha
         }
 
-        const url = `http://localhost:5027/entrar/`
+        const url = `http://${api}/entrar/`
         let resp = await axios.post(url, usuario)
 
         if (resp.data.erro !== undefined) {

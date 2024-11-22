@@ -3,6 +3,7 @@ import './inserir.scss';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import Cabecalho from '../../components/Header/cabecalho';
 import axios from 'axios';
+import { api } from '../../services/axios';
 
 export default function Inserir() {
 
@@ -44,13 +45,13 @@ export default function Inserir() {
 
         if (id === undefined) {
 
-            const url = `http://localhost:5027/produtos?x-access-token=${token}`;
+            const url = `http://${api}/produtos?x-access-token=${token}`;
             let resp = await axios.post(url, paramsCorpo);
             alert('Produto adicionado a vitrine. Id: ' + resp.data.novoId);
         }
         else {
 
-            const url = `http://localhost:5027/produtos/${id}?x-access-token=${token}`;
+            const url = `http://${api}/produtos/${id}?x-access-token=${token}`;
             await axios.put(url, paramsCorpo);
             alert('Produto alterado na vitrine.');
         }
@@ -58,7 +59,7 @@ export default function Inserir() {
 
     async function Consultar(id, token) {
         if (id !== undefined) {
-            const url = `http://localhost:5027/produtos/${id}?x-access-token=${token}`;
+            const url = `http://${api}/produtos/${id}?x-access-token=${token}`;
             let resp = await axios.get(url);
             let dados = resp.data;
 

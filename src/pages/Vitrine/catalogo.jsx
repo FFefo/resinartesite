@@ -11,6 +11,7 @@ import 'swiper/swiper-bundle.css';
 
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { api } from '../../services/axios.js';
 
 export default function Vitrine() {
 
@@ -20,7 +21,7 @@ export default function Vitrine() {
 
     async function VitrineChaveiros() {
 
-        const url = `http://localhost:5027/produto/Chaveiros`
+        const url = `http://${api}/produto/Chaveiros`
         const resp = await axios.get(url)
         let tamanho = resp.data.length
 
@@ -46,7 +47,7 @@ export default function Vitrine() {
     async function VitrineCanetas() {
         // pegar lista de registros
 
-        const url = `http://localhost:5027/produto/Canetas`
+        const url = `http://${api}/produto/Canetas`
         const resp = await axios.get(url)
         let tamanho = resp.data.length
 
@@ -72,7 +73,7 @@ export default function Vitrine() {
     async function VitrineAcessorios() {
         // pegar lista de registros
 
-        const url = `http://localhost:5027/produto/Acessorios`
+        const url = `http://${api}/produto/Acessorios`
         const resp = await axios.get(url)
         let tamanho = resp.data.length
 

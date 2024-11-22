@@ -2,6 +2,7 @@ import './consulta.scss';
 import Cabecalho from '../../components/Header/cabecalho';
 import { Link, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import { api } from '../../services/axios';
 import axios from 'axios';
 
 export default function Consulta() {
@@ -13,13 +14,13 @@ export default function Consulta() {
     const navigate = useNavigate()
 
     async function Buscar() {
-        const url = `http://localhost:5027/produtos?x-access-token=${token}`;
+        const url = `http://${api}/produtos?x-access-token=${token}`;
         let resp = await axios.get(url);
         setProduto(resp.data);
     }
 
     async function Remover(id) {
-        const url = `http://localhost:5027/produtos/${id}?x-access-token=${token}`;
+        const url = `http://${api}/produtos/${id}?x-access-token=${token}`;
         await axios.delete(url);
 
         await Buscar()
